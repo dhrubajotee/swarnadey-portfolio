@@ -511,6 +511,9 @@ video {
 [hidden]:where(:not([hidden="until-found"])) {
   display: none;
 }
+.visible{
+  visibility: visible;
+}
 .absolute{
   position: absolute;
 }
@@ -526,11 +529,20 @@ video {
 .flex{
   display: flex;
 }
+.inline-flex{
+  display: inline-flex;
+}
+.table{
+  display: table;
+}
 .grid{
   display: grid;
 }
 .hidden{
   display: none;
+}
+.grow{
+  flex-grow: 1;
 }
 .transform{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));

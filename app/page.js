@@ -3,11 +3,11 @@
 import Sidebar from '../components/Sidebar'
 import SectionHeader from '../components/SectionHeader'
 import Timeline from '../components/Timeline'
+import ProjectsSection from './projects/ProjectsSection'
 import {
   profile,
   about,
   experience,
-  achievements,
   community,
   education,
   languages,
@@ -17,7 +17,7 @@ import {
 const sectionStyle = {
   padding: '4rem 3.5rem',
   borderBottom: '1px solid #EDE8E2',
-  maxWidth: 1260,
+  maxWidth: 860,
 }
 
 export default function Home() {
@@ -158,61 +158,8 @@ export default function Home() {
           <Timeline items={experience} />
         </section>
 
-        {/* ── PROJECTS / ACHIEVEMENTS ── */}
-        <section id="projects" style={sectionStyle}>
-          <SectionHeader number="03" label="Highlights" title="Key Achievements" />
-          <div
-            style={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fill, minmax(230px, 1fr))',
-              gap: '1rem',
-            }}
-          >
-            {achievements.map((a, i) => {
-              const colors = [
-                { bg: 'rgba(193,165,119,0.1)', border: 'rgba(193,165,119,0.25)', stat: '#9A7F55' },
-                { bg: 'rgba(186,167,170,0.1)', border: 'rgba(186,167,170,0.25)', stat: '#8E7478' },
-                { bg: 'rgba(197,195,208,0.15)', border: 'rgba(197,195,208,0.35)', stat: '#9D9BAD' },
-                { bg: 'rgba(193,165,119,0.1)', border: 'rgba(193,165,119,0.25)', stat: '#9A7F55' },
-                { bg: 'rgba(186,167,170,0.1)', border: 'rgba(186,167,170,0.25)', stat: '#8E7478' },
-                { bg: 'rgba(197,195,208,0.15)', border: 'rgba(197,195,208,0.35)', stat: '#9D9BAD' },
-              ]
-              const c = colors[i % colors.length]
-              return (
-                <div
-                  key={i}
-                  style={{
-                    background: c.bg,
-                    border: `1px solid ${c.border}`,
-                    borderRadius: 10,
-                    padding: '1.3rem 1.5rem',
-                    transition: 'transform 0.2s',
-                  }}
-                  onMouseEnter={e => (e.currentTarget.style.transform = 'translateY(-2px)')}
-                  onMouseLeave={e => (e.currentTarget.style.transform = 'translateY(0)')}
-                >
-                  <div
-                    style={{
-                      fontFamily: '"Cormorant Garamond", serif',
-                      fontSize: '2rem',
-                      fontWeight: 700,
-                      color: c.stat,
-                      marginBottom: '0.3rem',
-                    }}
-                  >
-                    {a.stat}
-                  </div>
-                  <div style={{ fontSize: '0.88rem', fontWeight: 500, color: '#3A3530', marginBottom: '0.4rem' }}>
-                    {a.label}
-                  </div>
-                  <div style={{ fontSize: '0.8rem', color: '#7A6E68', lineHeight: 1.65 }}>
-                    {a.desc}
-                  </div>
-                </div>
-              )
-            })}
-          </div>
-        </section>
+        {/* ── PROJECTS CAROUSEL ── */}
+        <ProjectsSection />
 
         {/* ── COMMUNITY ── */}
         <section id="community" style={sectionStyle}>

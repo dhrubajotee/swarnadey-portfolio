@@ -75,14 +75,6 @@ export const experience = [
   },
 ]
 
-export const achievements = [
-  { stat: '5,000+', label: 'Visas processed monthly', desc: 'Zero compliance or data errors at the High Commission of India.' },
-  { stat: '400+', label: 'Trees planted', desc: 'Urban forestation across schoolyards, rooftops and community spaces in Dhaka.' },
-  { stat: '50+', label: 'Art Club participants', desc: 'Diverse nationalities within just six months of founding the Art Club.' },
-  { stat: '1,000+', label: 'MUN delegates managed', desc: 'Directed 4+ international conferences as Director of Delegate Affairs.' },
-  { stat: '15K+', label: 'Instagram followers', desc: 'Built an engaged international art community @priyodorshini.d_.' },
-  { stat: '5 yrs', label: 'Night school sustained', desc: 'Co-founded free evening lessons for street children in Dhaka slum areas.' },
-]
 
 export const community = [
   {
