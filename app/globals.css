@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600&family=Jost:wght@300;400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --mustard: #C1A577;
+  --mustard-light: #E8D9C0;
+  --lavender: #C5C3D0;
+  --lavender-light: #ECEAF3;
+  --pink: #BAA7AA;
+  --pink-light: #E8DCDE;
+  --cream: #FAF7F2;
+  --parchment: #F2EDE4;
+  --ink: #3A3530;
+  --ink-muted: #7A6E68;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--cream);
+  color: var(--ink);
+  font-family: 'Jost', sans-serif;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: var(--lavender-light);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--lavender);
+  border-radius: 10px;
+}
+
+/* Sidebar scrollable */
+.sidebar-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: var(--lavender) var(--lavender-light);
+}
+
+/* Section fade-in animation */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-up {
+  animation: fadeUp 0.6s ease forwards;
+}
+
+/* Timeline dot pulse */
+@keyframes pulse-dot {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(193, 165, 119, 0.4); }
+  50% { box-shadow: 0 0 0 6px rgba(193, 165, 119, 0); }
+}
+
+.dot-pulse {
+  animation: pulse-dot 2s infinite;
+}
