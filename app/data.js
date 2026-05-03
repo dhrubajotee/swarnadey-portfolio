@@ -3,7 +3,7 @@ export const profile = {
   title: 'Community Volunteer',
   subtitle: 'Youth Engagement · Environmental & Creative Facilitation',
   tagline:
-    'Community builder, art facilitator, and social changemaker. From planting trees in Dhaka to running Art Clubs in Finland — I bring people together through creativity and purpose.',
+    'Community builder, art facilitator, and social changemaker. From planting trees in Dhaka to running Art Clubs in Finland - I bring people together through creativity and purpose.',
   location: 'Jyväskylä, Finland',
   email: 'swarna9393@gmail.com',
   phone: '+358 41 499 4615',
@@ -15,13 +15,13 @@ export const profile = {
   rightToWork: 'Finland (Unrestricted)',
 }
 
-export const about = `I'm a sociology graduate and community volunteer based in Jyväskylä, Finland, with a deep commitment to work that connects people — across cultures, generations, and circumstances. My journey spans grassroots education in the streets of Dhaka, planting urban forests, facilitating art sessions for international communities, and managing high-stakes administrative roles.
+export const about = `I'm a sociology graduate and community volunteer based in Jyväskylä, Finland, with a deep commitment to work that connects people - across cultures, generations, and circumstances. My journey spans grassroots education in the streets of Dhaka, planting urban forests, facilitating art sessions for international communities, and managing high-stakes administrative roles.
 
 Whether I'm running a weekly Art Club that unites 50+ people of different nationalities, or helping working children access evening education, I approach every challenge with warmth, creativity, and consistency. I hold unrestricted right to work in Finland and am open to relocation.`
 
 export const experience = [
   {
-    role: 'Work Trainee — Customer Service Assistant',
+    role: 'Work Trainee - Customer Service Assistant',
     org: 'Aseman Pysäkki, Jyväskylän Seurakunta',
     location: 'Jyväskylä, Finland',
     period: 'Sept 2025 – Feb 2026',
@@ -30,16 +30,6 @@ export const experience = [
       'Customer service in Finnish & English; multicultural community event support',
       'Waste sorting and recycling per Finnish regulations',
       'Managed pantry stock, food storage and supply organisation',
-    ],
-  },
-  {
-    role: 'Cleaner & Store Staff',
-    org: 'Shwapno Super Shop',
-    location: 'Dhaka, Bangladesh',
-    period: 'Nov 2024 – Apr 2025',
-    bullets: [
-      'Full facility cleaning across day and night shifts',
-      'Shelf stocking, waste collection and sanitation',
     ],
   },
   {
@@ -63,16 +53,6 @@ export const experience = [
       'Fieldwork, data collection tools and research documentation',
     ],
   },
-  {
-    role: 'Kitchen Helper & Cleaner',
-    org: 'Cafe Baghdad Biriyani & Kebab House',
-    location: 'Dhaka, Bangladesh',
-    period: 'Dec 2019 – July 2022',
-    bullets: [
-      'Food preparation and kitchen support in a high-volume restaurant',
-      '2+ years of consistent hygiene and food safety practice',
-    ],
-  },
 ]
 
 
@@ -91,7 +71,7 @@ export const community = [
     ],
   },
   {
-    role: 'Street Children Night School — Co-founder',
+    role: 'Street Children Night School - Co-founder',
     org: 'Community Initiative (Informal)',
     location: 'Dhaka, Bangladesh',
     period: '2018 – 2022',
@@ -101,7 +81,7 @@ export const community = [
     ],
   },
   {
-    role: 'Urban Forestation Campaign — Co-organiser',
+    role: 'Urban Forestation Campaign - Co-organiser',
     org: 'Community Initiative (Informal)',
     location: 'Dhaka, Bangladesh',
     period: '2018 – 2022',
@@ -112,7 +92,7 @@ export const community = [
   },
   {
     role: 'Director of Delegate Affairs',
-    org: 'DUMUNA — Dhaka University MUN Association',
+    org: 'DUMUNA - Dhaka University MUN Association',
     location: 'Dhaka, Bangladesh',
     period: '2015 – 2017',
     bullets: [
@@ -121,7 +101,7 @@ export const community = [
   },
   {
     role: 'Cultural & Corporate Relations Executive',
-    org: 'DUCS — Dhaka University Cultural Society',
+    org: 'DUCS - Dhaka University Cultural Society',
     location: 'Dhaka, Bangladesh',
     period: '2015 – 2017',
     bullets: [
@@ -147,8 +127,8 @@ export const education = [
 
 export const languages = [
   { name: 'Bengali', level: 'Native' },
-  { name: 'English', level: 'C1 — Full Professional (IELTS 7.5)' },
-  { name: 'Finnish', level: 'A1.2 — Basic' },
+  { name: 'English', level: 'C1 - Full Professional (IELTS 7.5)' },
+  { name: 'Finnish', level: 'A1.2 - Basic' },
   { name: 'Hindi', level: 'Spoken Proficiency' },
 ]
 

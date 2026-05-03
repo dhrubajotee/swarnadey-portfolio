@@ -25,7 +25,8 @@ export default function ProjectsSection() {
   }
 
   return (
-    <section id="projects" style={{ padding: '4rem 3.5rem', borderBottom: '1px solid #EDE8E2', maxWidth: 860 }}>
+    <section id="projects" style={{ padding: '4rem 3.5rem', borderBottom: '1px solid #EDE8E2', width: '90%', maxWidth: '960px',
+        margin: '0 auto', }}>
       {/* Header */}
       <div style={{ marginBottom: '2rem' }}>
         <div style={{

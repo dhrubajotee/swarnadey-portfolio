@@ -3,6 +3,7 @@
 import Sidebar from '../components/Sidebar'
 import SectionHeader from '../components/SectionHeader'
 import Timeline from '../components/Timeline'
+import ExperienceTimeline from '../components/ExperienceTimeline'
 import ProjectsSection from './projects/ProjectsSection'
 import {
   profile,
@@ -17,7 +18,9 @@ import {
 const sectionStyle = {
   padding: '4rem 3.5rem',
   borderBottom: '1px solid #EDE8E2',
-  maxWidth: 860,
+  width: '80%',
+  maxWidth: '960px',
+  margin: '0 auto',
 }
 
 export default function Home() {
@@ -144,7 +147,6 @@ export default function Home() {
                 color: '#7A6E68',
                 lineHeight: 1.9,
                 marginBottom: '1rem',
-                maxWidth: 680,
               }}
             >
               {para}
@@ -155,7 +157,8 @@ export default function Home() {
         {/* ── EXPERIENCE ── */}
         <section id="experience" style={sectionStyle}>
           <SectionHeader number="02" label="Work History" title="Professional Experience" />
-          <Timeline items={experience} />
+          {/* <Timeline items={experience} /> */}
+          <ExperienceTimeline />
         </section>
 
         {/* ── PROJECTS CAROUSEL ── */}
@@ -186,7 +189,7 @@ export default function Home() {
             </svg>
             <div>
               <div style={{ fontSize: '0.88rem', fontWeight: 500, color: '#3A3530', marginBottom: '0.3rem' }}>
-                Instagram Art Community —{' '}
+                Instagram Art Community -{' '}
                 <a href={profile.instagram} target="_blank" rel="noopener noreferrer" style={{ color: '#C1A577', textDecoration: 'none' }}>
                   {profile.instagramHandle}
                 </a>
@@ -194,7 +197,7 @@ export default function Home() {
               <div style={{ fontSize: '0.82rem', color: '#7A6E68', lineHeight: 1.75 }}>
                 Built an engaged international creative community of{' '}
                 <strong style={{ color: '#BAA7AA' }}>{profile.instagramFollowers} followers</strong>{' '}
-                through organic growth and consistent drawing and painting — demonstrating art as a vehicle for human connection.
+                through organic growth and consistent drawing and painting - demonstrating art as a vehicle for human connection.
               </div>
             </div>
           </div>
@@ -438,10 +441,9 @@ export default function Home() {
             }}
           >
             <div style={{ fontWeight: 500, color: '#3A3530', marginBottom: '0.5rem', fontSize: '0.85rem' }}>
-              References available on request
+              Reference
             </div>
-            <div>Sanna Rasinkangas — Deacon, Jyväskylän Seurakunta</div>
-            <div>Eric Bosire — Multilingual Counselor, International House Jyväskylä</div>
+            <div>Sanna Rasinkangas - Deacon, Jyväskylän Seurakunta | sanna.rasinkangas@evl.fi | 0505497033</div>
           </div>
         </section>
 
