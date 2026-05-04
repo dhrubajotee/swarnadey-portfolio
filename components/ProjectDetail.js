@@ -7,7 +7,7 @@ export default function ProjectDetail({ project }) {
   const [activeGallery, setActiveGallery] = useState(0)
 
   const {
-    title, subtitle, location, period, status,
+    title, subtitle,slug, location, period, status,
     accent, accentBorder, tagBg, tagColor,
     icon, fullDescription, stats, timeline, gallery, tags, callToAction,
   } = project
@@ -174,7 +174,8 @@ export default function ProjectDetail({ project }) {
               fontSize: '0.87rem', lineHeight: 1.85,
               color: '#7A6E68', margin: '0 0 1.25rem 0',
             }}>
-              {/* {fullDescription} */}
+              {slug === 'instagram-art-community'? fullDescription : 
+              <>
                     <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.6rem' }}>
                       {fullDescription.map((b, i) => (
                         <li key={i} style={{
@@ -201,6 +202,9 @@ export default function ProjectDetail({ project }) {
                         </li>
                       ))}
                     </ul>
+              </>
+              }
+
             </div>
 
             {/* Tags */}

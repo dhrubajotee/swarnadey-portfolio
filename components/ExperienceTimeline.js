@@ -223,7 +223,7 @@ function ExperienceCard({ exp, isActive, onClick }) {
           marginBottom: '0.2rem',
           transition: 'color 0.2s',
         }}>
-          {exp.roleDetail || 'Position'}
+          {exp.roleDetail || ''}
         </div>
         <div style={{
           fontFamily: '"Cormorant Garamond", serif',

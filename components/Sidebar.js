@@ -163,6 +163,12 @@ function NavIcon({ name, isActive }) {
         <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
       </svg>
     ),
+    Language: (
+      <svg style={s} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="2">
+        <path d="M5 8l6 6"/><path d="M4 14l6-6 2-3"/><path d="M2 5h12"/><path d="M7 2h1"/>
+        <path d="M22 22l-5-10-5 10"/><path d="M14 18h6"/>
+      </svg>
+    ),
     Education: (
       <svg style={s} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="2">
         <path d="M22 10v6M2 10l10-5 10 5-10 5z" /><path d="M6 12v5c3 3 9 3 12 0v-5" />

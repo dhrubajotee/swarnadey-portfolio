@@ -41,12 +41,12 @@ export const projects = [
     fullDescription:
       // 'A weekly, free, open-door creative community space I founded and continue to run at Aseman Pysäkki. The club grew from zero to 50+ participants across 11-12 nationalities within six months, spanning ages 2 to elderly. Every session is themed and facilitated by me — I handle the full coordination cycle: planning, sourcing materials, communicating with participants, adapting formats for accessibility, and maintaining the welcoming atmosphere that keeps people coming back. We have organised a community art exhibition and multicultural celebration events alongside the weekly sessions. Supported by Jyväskylän Seurakunta, the club also contributes to Christmas community events and facilitates social integration for local and international visitors.',
       [
-      <>Established and scaled a weekly art club to <strong>50+ participants from 10+ nationalities within 6 months</strong> by designing accessible sessions</>,
-      <>Facilitated structured group activities, improving <strong>social participation and cross-cultural interaction</strong>  </>,
-      <>Managed end-to-end coordination including planning, materials, and participant flow, ensuring <strong>consistent weekly delivery</strong></>,
-      <>Supported multicultural community events, contributing to <strong>local integration and engagement initiatives</strong>  </>
-    ]
-    },
+        <>Established and scaled a weekly art club to <strong>50+ participants from 10+ nationalities within 6 months</strong> by designing accessible sessions</>,
+        <>Facilitated structured group activities, improving <strong>social participation and cross-cultural interaction</strong>  </>,
+        <>Managed end-to-end coordination including planning, materials, and participant flow, ensuring <strong>consistent weekly delivery</strong></>,
+        <>Supported multicultural community events, contributing to <strong>local integration and engagement initiatives</strong>  </>
+      ]
+  },
   {
     slug: 'blog-social-media',
     title: 'International Life in Jyväskylä',
@@ -86,14 +86,14 @@ export const projects = [
       { label: 'Integration tips', color: '#EAE8F2' },
     ],
     fullDescription:
-    [  
-      'Writing and social media content documenting the realities of international life in Finland — practical guides for newcomers navigating Finnish systems, bureaucracy, culture, and community. Created to fill a gap I noticed personally as someone who relocated to Jyväskylä from Bangladesh: honest, human, non-institutional guidance for people trying to build a life in Finland.',
-  ]
-    },
+      [
+        'Writing and social media content documenting the realities of international life in Finland — practical guides for newcomers navigating Finnish systems, bureaucracy, culture, and community. Created to fill a gap I noticed personally as someone who relocated to Jyväskylä from Bangladesh: honest, human, non-institutional guidance for people trying to build a life in Finland.',
+      ]
+  },
   {
     slug: 'instagram-art-community',
-    title: 'Instagram Art Community',
-    subtitle: '@priyodorshini.d_',
+    title: 'Social Media Content Creator',
+    subtitle: 'Art Community - @priyodorshini.d_',
     location: 'Global',
     period: '2019 - Present',
     status: 'Ongoing',
@@ -131,10 +131,128 @@ export const projects = [
       { label: 'Sketchbook', color: '#E6DCDE' },
     ],
     fullDescription:
-    [  
-    'Built an engaged international creative community of 15,000+ followers through consistent original drawing and painting content, entirely through organic growth with no paid promotion. The account — @priyodorshini.d_ — demonstrates sustained commitment to art as a vehicle for human connection, and has grown into a creative community spanning many countries. Every piece of content is original, handmade, and personally meaningful.',
-  ]
-    },
+
+      <div>
+        <h2><strong>Performance & Growth</strong></h2>
+        <ul>
+          <li>
+            <span style={{
+              marginTop: '0.3rem',
+              flexShrink: 0,
+              width: 6, height: 6,
+              borderRadius: '50%',
+              background: '#C1A577',
+              border: `1.5px solid #BAA7AA`,
+              display: 'inline-block',
+            }} /> Grew platform to 15,000+ followers through organic content strategy</li>
+          <li><span style={{
+            marginTop: '0.3rem',
+            flexShrink: 0,
+            width: 6, height: 6,
+            borderRadius: '50%',
+            background: '#C1A577',
+            border: `1.5px solid #BAA7AA`,
+            display: 'inline-block',
+          }} /> Achieved 2M+ views on a single illustrative video and maintained ~100K monthly reach</li>
+        </ul>
+
+        <h2><strong>Content Strategy & Execution</strong></h2>
+        <ul>
+          <li><span style={{
+            marginTop: '0.3rem',
+            flexShrink: 0,
+            width: 6, height: 6,
+            borderRadius: '50%',
+            background: '#C1A577',
+            border: `1.5px solid #BAA7AA`,
+            display: 'inline-block',
+          }} /> Planned and produced content across reels, carousel posts, and static visuals, improving reach and engagement</li>
+          <li><span style={{
+            marginTop: '0.3rem',
+            flexShrink: 0,
+            width: 6, height: 6,
+            borderRadius: '50%',
+            background: '#C1A577',
+            border: `1.5px solid #BAA7AA`,
+            display: 'inline-block',
+          }} /> Created end-to-end content including digital illustrations, infographics, and animations tailored to audience preferences</li>
+          <li><span style={{
+            marginTop: '0.3rem',
+            flexShrink: 0,
+            width: 6, height: 6,
+            borderRadius: '50%',
+            background: '#C1A577',
+            border: `1.5px solid #BAA7AA`,
+            display: 'inline-block',
+          }} /> Applied visual storytelling and short-form video editing to increase content performance and shareability</li>
+        </ul>
+
+        <h2><strong>Tools & Collaboration</strong></h2>
+        <ul>
+          <li><span style={{
+            marginTop: '0.3rem',
+            flexShrink: 0,
+            width: 6, height: 6,
+            borderRadius: '50%',
+            background: '#C1A577',
+            border: `1.5px solid #BAA7AA`,
+            display: 'inline-block',
+          }} /> Used Canva, Adobe Illustrator, IbisPaint X, and FlipaClip for design, digital painting, and animation production</li>
+          <li><span style={{
+            marginTop: '0.3rem',
+            flexShrink: 0,
+            width: 6, height: 6,
+            borderRadius: '50%',
+            background: '#C1A577',
+            border: `1.5px solid #BAA7AA`,
+            display: 'inline-block',
+          }} /> Collaborated with artists, singers, and brands (including Coke Studio Bangla) to expand audience reach and cross-promote content</li>
+        </ul>
+      </div>
+
+  },
+    {
+    slug: 'dumuna',
+    title: 'Dhaka University Model United Nations Association',
+    subtitle: 'DUMUNA — Executive Member',
+    location: 'Dhaka, Bangladesh',
+    period: '2015 - 2017',
+    status: 'Completed',
+    description:
+      'Coordinated large-scale international Model UN conferences with 1,000+ participants, managing delegate operations and event execution. Experience in leadership, sponsorship coordination, and global policy simulation.',
+    tags: ['Leadership', 'Diplomacy', 'Events'],
+    // Palette: soft blue-lavender
+    accent: '#DDE4F0',
+    accentBorder: '#C8D4E8',
+    tagBg: 'rgba(180,190,220,0.18)',
+    tagColor: '#5A6A9A',
+    statusBg: 'rgba(197,195,208,0.2)',
+    icon: '🌐',
+    featured: false,
+    stats: [
+      { icon: '🌍', label: 'Conferences', value: '4+' },
+      { icon: '👥', label: 'Participants', value: '1,000+' },
+      { icon: '🏆', label: 'Award', value: 'Best Position Paper' },
+      { icon: '📅', label: 'Duration', value: '2 years' },
+    ],
+    timeline: [
+      { year: '2015', label: 'Joined DUMUNA', icon: '🌱' },
+      { year: '2015', label: 'First conference', icon: '🎤' },
+      { year: '2016', label: 'Director of Delegate Affairs', icon: '🏛️' },
+      { year: '2016', label: 'Best Position Paper', icon: '🏆' },
+      { year: '2017', label: '4+ events led', icon: '✨' },
+    ],
+    gallery: [
+      { label: 'Conference hall', color: '#DDE4F0' },
+      { label: 'Delegate sessions', color: '#D0DAE8' },
+      { label: 'Opening ceremony', color: '#E4EAF5' },
+      { label: 'Award moment', color: '#D8E0EE' },
+      { label: 'Team coordination', color: '#E0E6F2' },
+      { label: 'Policy simulation', color: '#D4DCE8' },
+    ],
+    fullDescription:
+      [<>As an Executive Member of DUMUNA, I coordinated large-scale international Model United Nations conferences hosting 1,000+ participants across 4+ events — managing multi-stage delegate operations, partner and sponsor relations, and end-to-end event execution. In my role as Director of Delegate Affairs, I oversaw delegate coordination, engagement, and communications across complex, multi-day conferences. I was also recognised with the Best Position Paper Award, reflecting research depth, analytical thinking, and written communication skills applied to global policy simulation. This experience built a strong foundation in leadership, institutional coordination, and cross-cultural professional engagement.</>]
+  },
   {
     slug: 'urban-forestation',
     title: 'Urban Forestation Campaign',

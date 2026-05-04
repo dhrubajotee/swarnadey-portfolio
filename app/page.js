@@ -6,6 +6,7 @@ import Timeline from '../components/Timeline'
 import ExperienceTimeline from '../components/ExperienceTimeline'
 import ProjectsSection from './projects/ProjectsSection'
 import CommunitySection from '../components/CommunitySection'
+import LanguageSection from '../components/LanguageSection'
 
 import {
   profile,
@@ -186,6 +187,12 @@ export default function Home() {
           <CommunitySection />
         </section>
 
+        {/* ── LANGUAGE ── */}
+        <section id="language" style={{ ...sectionStyle, maxWidth: '90%', paddingRight: '3.5rem' }}>
+          <SectionHeader number="06" label="Communication" title="Languages" />
+          <LanguageSection />
+        </section>
+
         {/* ── EDUCATION ── */}
         <section id="education" style={{ ...sectionStyle, maxWidth: '90%', paddingRight: '3.5rem' }}>
           <SectionHeader number="05" label="Academic Background" title="Education" />
@@ -224,41 +231,6 @@ export default function Home() {
               </div>
             </div>
           ))}
-
-          {/* Languages */}
-          <div style={{ marginTop: '2.5rem' }}>
-            <div
-              style={{
-                fontSize: '0.72rem',
-                color: '#BAA7AA',
-                textTransform: 'uppercase',
-                letterSpacing: '0.1em',
-                marginBottom: '1rem',
-                fontWeight: 500,
-              }}
-            >
-              Languages
-            </div>
-            <div style={{ display: 'flex', gap: '0.8rem', flexWrap: 'wrap' }}>
-              {languages.map((lang, i) => (
-                <div
-                  key={i}
-                  style={{
-                    background: '#F2EDE4',
-                    border: '1px solid #E0D6CB',
-                    borderRadius: 8,
-                    padding: '0.85rem 1.2rem',
-                    minWidth: 140,
-                  }}
-                >
-                  <div style={{ fontSize: '0.9rem', fontWeight: 500, color: '#3A3530', marginBottom: '0.25rem' }}>
-                    {lang.name}
-                  </div>
-                  <div style={{ fontSize: '0.75rem', color: '#C1A577' }}>{lang.level}</div>
-                </div>
-              ))}
-            </div>
-          </div>
         </section>
 
         {/* ── SKILLS ── */}
