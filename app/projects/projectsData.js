@@ -86,8 +86,10 @@ export const projects = [
       { label: 'Integration tips', color: '#EAE8F2' },
     ],
     fullDescription:
+    [  
       'Writing and social media content documenting the realities of international life in Finland — practical guides for newcomers navigating Finnish systems, bureaucracy, culture, and community. Created to fill a gap I noticed personally as someone who relocated to Jyväskylä from Bangladesh: honest, human, non-institutional guidance for people trying to build a life in Finland.',
-  },
+  ]
+    },
   {
     slug: 'instagram-art-community',
     title: 'Instagram Art Community',
@@ -129,8 +131,10 @@ export const projects = [
       { label: 'Sketchbook', color: '#E6DCDE' },
     ],
     fullDescription:
-      'Built an engaged international creative community of 15,000+ followers through consistent original drawing and painting content, entirely through organic growth with no paid promotion. The account — @priyodorshini.d_ — demonstrates sustained commitment to art as a vehicle for human connection, and has grown into a creative community spanning many countries. Every piece of content is original, handmade, and personally meaningful.',
-  },
+    [  
+    'Built an engaged international creative community of 15,000+ followers through consistent original drawing and painting content, entirely through organic growth with no paid promotion. The account — @priyodorshini.d_ — demonstrates sustained commitment to art as a vehicle for human connection, and has grown into a creative community spanning many countries. Every piece of content is original, handmade, and personally meaningful.',
+  ]
+    },
   {
     slug: 'urban-forestation',
     title: 'Urban Forestation Campaign',
