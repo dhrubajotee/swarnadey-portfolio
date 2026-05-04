@@ -1,9 +1,10 @@
 export const profile = {
   name: 'Swarna Dey',
   title: 'Community Volunteer',
-  subtitle: 'Youth Engagement · Environmental & Creative Facilitation',
+  subtitle: 'Administrative & Coordination Professional ',
   tagline:
-    'Community builder, art facilitator, and social changemaker. From planting trees in Dhaka to running Art Clubs in Finland - I bring people together through creativity and purpose.',
+      'Supporting structured processes, accurate service delivery, and community-focused operations in multicultural environments. ',
+  endline: 'Based in Jyväskylä | Interested in roles in administration, coordination, and public or community-oriented services ',
   location: 'Jyväskylä, Finland',
   email: 'swarna9393@gmail.com',
   phone: '+358 41 499 4615',

@@ -115,6 +115,17 @@ export default function Home() {
             >
               {profile.tagline}
             </p>
+            <p
+              style={{
+                fontSize: '0.95rem',
+                color: '#7A6E68',
+                maxWidth: 560,
+                lineHeight: 1.85,
+                marginBottom: '1rem',
+              }}
+            >
+              {profile.endline}
+            </p>
             <div style={{ display: 'flex', gap: '0.6rem', flexWrap: 'wrap' }}>
               {['Youth Engagement', 'Creative Facilitation', 'Environmental Outreach', 'Multicultural Inclusion', 'Community Building'].map(tag => (
                 <span
