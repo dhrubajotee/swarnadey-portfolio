@@ -135,38 +135,34 @@ export const languages = [
 
 export const skills = [
   {
-    category: 'Community & Youth Work',
+    category: 'Administrative & Coordination',
     color: 'mustard',
     items: [
-      'Non-formal facilitation',
-      'Creative workshop design',
-      'Environmental education',
-      'Intercultural inclusion',
-      'Event coordination',
-      'Delegate management',
+      'Case processing & documentation management',
+      'Compliance, data verification & accuracy control',
+      'Workflow coordination & reporting support',
+      'Records management & structured data handling',
+      'Service needs assessment',
     ],
   },
   {
-    category: 'Practical & Operations',
+    category: 'Customer Service & Communication',
     color: 'pink',
     items: [
-      'Kitchen & food preparation',
-      'Finnish Hygiene Passport',
-      'Café & customer service',
-      'Sanitation operations',
-      'Stock & supply management',
+      'Multilingual customer support',
+      'Client advisory & inquiry resolution',
+      'Cross-cultural communication',
+      'Stakeholder coordination and team collaboration'
     ],
   },
   {
-    category: 'Digital & Administrative',
+    category: 'Tools & Software',
     color: 'lavender',
     items: [
-      'Microsoft Office Suite',
-      'Microsoft Teams',
-      'SharePoint',
-      'Adobe Illustrator',
-      'SPSS & STATA',
-      'Social media growth',
+      'Microsoft Office (Excel, Word, Outlook), Teams, SharePoint',
+      'Canva, Adobe Illustrator',
+      'IbisPaint X (Digital painting), FlipaClip (Animation)',
+      'SPSS (basic)',
     ],
   },
 ]

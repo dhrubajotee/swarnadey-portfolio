@@ -91,7 +91,7 @@ const communityCards = [
     category: 'Civic',
     title: 'Participant — Civic Orientation Programme',
     org: 'International House Jyväskylä · City of Jyväskylä',
-    date: '2025-2026',
+    date: '2026',
     accent: '#B8A8C8',
     accentLight: '#EDE8F5',
     accentMid: '#D8D0E8',
@@ -122,7 +122,7 @@ const communityCards = [
     ],
     bullets: [
       'Volunteer for event logistics and public activities at the museum',
-      'Strengthened practical Finnish language use through regular engagement with visitors and staff',
+      'Intend to strengthen practical Finnish language use through regular engagement with visitors and staff',
     ],
   },
 ]

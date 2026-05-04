@@ -52,7 +52,7 @@ export const projects = [
     title: 'International Life in Jyväskylä',
     subtitle: 'Blog Writing',
     location: 'Jyväskylä, Finland',
-    period: '2024 - Present',
+    period: '2025 - Present',
     status: 'Ongoing',
     description:
       'Writing and social media content documenting the realities of international life in Finland — practical guides for newcomers navigating Finnish systems.',
@@ -67,13 +67,12 @@ export const projects = [
     featured: true,
     stats: [
       { icon: '📝', label: 'Content type', value: 'Blog & Social' },
-      { icon: '🌐', label: 'Audience', value: 'Newcomers' },
+      { icon: '🌐', label: 'Audience', value: 'Local and Internationals' },
       { icon: '🇫🇮', label: 'Focus', value: 'Finland life' },
-      { icon: '⏱', label: 'Since', value: '2024' },
+      { icon: '⏱', label: 'Since', value: '2025' },
     ],
     timeline: [
-      { year: '2024', label: 'First posts', icon: '✍️' },
-      { year: '2024', label: 'Finnish guides', icon: '🇫🇮' },
+      { year: '2025', label: 'First posts', icon: '✍️' },
       { year: '2025', label: 'Growing reach', icon: '📈' },
       { year: '2026', label: 'Ongoing', icon: '✨' },
     ],

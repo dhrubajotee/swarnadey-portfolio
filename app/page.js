@@ -231,13 +231,13 @@ export default function Home() {
 
         {/* ── LANGUAGE ── */}
         <section id="language" style={{ ...sectionStyle, maxWidth: '90%', paddingRight: '3.5rem' }}>
-          <SectionHeader number="06" label="Communication" title="Languages" />
+          <SectionHeader number="05" label="Communication" title="Languages" />
           <LanguageSection />
         </section>
 
         {/* ── EDUCATION ── */}
         <section id="education" style={{ ...sectionStyle, maxWidth: '90%', paddingRight: '3.5rem' }}>
-          <SectionHeader number="05" label="Academic Background" title="Education" />
+          <SectionHeader number="06" label="Academic Background" title="Education" />
 
           {education.map((ed, i) => (
             <div
@@ -277,7 +277,7 @@ export default function Home() {
 
         {/* ── SKILLS ── */}
         <section id="skills" style={{ ...sectionStyle, maxWidth: '90%', paddingRight: '3.5rem' }}>
-          <SectionHeader number="06" label="Capabilities" title="Skills" />
+          <SectionHeader number="07" label="Capabilities" title="Skills" />
           <div
             style={{
               display: 'grid',
@@ -339,11 +339,11 @@ export default function Home() {
 
         {/* ── CONTACT ── */}
         <section id="contact" style={{ ...sectionStyle, maxWidth: '90%', paddingRight: '3.5rem' }}>
-          <SectionHeader number="07" label="Get In Touch" title="Contact" />
+          <SectionHeader number="08" label="Get In Touch" title="Contact" />
           <div
             style={{
               display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))',
+              gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))',
               gap: '1rem',
             }}
           >
