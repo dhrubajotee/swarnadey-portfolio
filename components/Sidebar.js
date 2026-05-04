@@ -84,9 +84,9 @@ export default function Sidebar() {
         >
           {profile.name}
         </div>
-        <div style={{ fontSize: '0.72rem', color: '#C1A577', letterSpacing: '0.07em', textTransform: 'uppercase', lineHeight: 1.6 }}>
+        {/* <div style={{ fontSize: '0.72rem', color: '#C1A577', letterSpacing: '0.07em', textTransform: 'uppercase', lineHeight: 1.6 }}>
           {profile.title}
-        </div>
+        </div> */}
         <div style={{ fontSize: '0.72rem', color: '#9D9BAD', marginTop: '0.2rem', lineHeight: 1.6 }}>
           {profile.subtitle}
         </div>

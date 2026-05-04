@@ -130,7 +130,7 @@ export default function Home() {
               {profile.endline}
             </p>
             <div style={{ display: 'flex', gap: '0.6rem', flexWrap: 'wrap' }}>
-              {['Youth Engagement', 'Creative Facilitation', 'Environmental Outreach', 'Multicultural Inclusion', 'Community Building'].map(tag => (
+              {['Administration', 'Case Handling', 'Customer Service', 'Community Integration', 'Creative Facilitation'].map(tag => (
                 <span
                   key={tag}
                   style={{
@@ -153,19 +153,61 @@ export default function Home() {
         {/* ── ABOUT ── */}
         <section id="about" style={{ ...sectionStyle, maxWidth: '90%', paddingRight: '3.5rem' }}>
           <SectionHeader number="01" label="About Me" title="Who I Am" />
-          {about.split('\n\n').map((para, i) => (
-            <p
-              key={i}
-              style={{
-                fontSize: '0.93rem',
-                color: '#7A6E68',
-                lineHeight: 1.9,
-                marginBottom: '1rem',
-              }}
-            >
-              {para}
-            </p>
-          ))}
+
+          <div>
+            Structured, detail-oriented professional with experience in administration, coordination, and community-based work across international environments.
+            <ul>
+              <li>
+                <span style={{
+                  marginTop: '0.3rem',
+                  flexShrink: 0,
+                  width: 6, height: 6,
+                  borderRadius: '50%',
+                  background: '#C1A577',
+                  border: `1.5px solid #BAA7AA`,
+                  display: 'inline-block',
+                }} /> Experienced in <strong>high-volume administrative processes</strong>, handling 5,000+ monthly cases with accuracy and compliance</li>
+              <li><span style={{
+                marginTop: '0.3rem',
+                flexShrink: 0,
+                width: 6, height: 6,
+                borderRadius: '50%',
+                background: '#C1A577',
+                border: `1.5px solid #BAA7AA`,
+                display: 'inline-block',
+              }} /> Strong in <strong>coordination and service delivery</strong>, supporting daily operations and multicultural community environments  </li>
+
+              <li><span style={{
+                marginTop: '0.3rem',
+                flexShrink: 0,
+                width: 6, height: 6,
+                borderRadius: '50%',
+                background: '#C1A577',
+                border: `1.5px solid #BAA7AA`,
+                display: 'inline-block',
+              }} /> Proven ability to <strong>initiate and scale community projects</strong>, including building a 50+ member international art group in Finland  </li>
+              <li><span style={{
+                marginTop: '0.3rem',
+                flexShrink: 0,
+                width: 6, height: 6,
+                borderRadius: '50%',
+                background: '#C1A577',
+                border: `1.5px solid #BAA7AA`,
+                display: 'inline-block',
+              }} /> Skilled in <strong>cross-cultural communication</strong>, working with diverse stakeholders in both Bangladesh and Finland    </li>
+              <li><span style={{
+                marginTop: '0.3rem',
+                flexShrink: 0,
+                width: 6, height: 6,
+                borderRadius: '50%',
+                background: '#C1A577',
+                border: `1.5px solid #BAA7AA`,
+                display: 'inline-block',
+              }} /> Currently developing <strong>Finnish language and local system knowledge</strong>, with active involvement in community and integration initiatives     </li>
+
+            </ul>
+          </div>
+
         </section>
 
         {/* ── EXPERIENCE ── */}
@@ -179,7 +221,7 @@ export default function Home() {
         <section style={{ ...sectionStyle, maxWidth: '90%', paddingRight: '3.5rem' }}>
           <ProjectsSection />
         </section>
-        
+
 
         {/* ── COMMUNITY ── */}
         <section id="community" style={{ ...sectionStyle, maxWidth: '90%', paddingRight: '3.5rem' }}>

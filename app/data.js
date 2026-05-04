@@ -176,6 +176,7 @@ export const navLinks = [
   { href: '#experience', label: 'Experience' },
   { href: '#projects', label: 'Projects' },
   { href: '#community', label: 'Community' },
+  { href: '#language', label: 'Language' },
   { href: '#education', label: 'Education' },
   { href: '#skills', label: 'Skills' },
   { href: '#contact', label: 'Contact' },
