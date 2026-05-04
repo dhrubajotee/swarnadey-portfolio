@@ -25,7 +25,7 @@ export default function ProjectsSection() {
   }
 
   return (
-    <section id="projects" style={{ padding: '4rem 0.1rem', borderBottom: '1px solid #EDE8E2', width: '100%', maxWidth: '1100px',
+    <section id="projects" style={{ padding: '4rem 0.1rem', borderBottom: '1px solid #EDE8E2', width: '100%', 
         margin: '0 auto', }}>
       {/* Header */}
       <div style={{ marginBottom: '2rem' }}>
@@ -133,7 +133,7 @@ function ProjectCard({ project, index }) {
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
         style={{
-          width: 300,
+          width: 350,
           borderRadius: 14,
           overflow: 'hidden',
           border: `1px solid ${hovered ? project.accentBorder : '#EDE8E2'}`,

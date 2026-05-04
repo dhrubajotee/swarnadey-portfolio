@@ -5,11 +5,13 @@ import SectionHeader from '../components/SectionHeader'
 import Timeline from '../components/Timeline'
 import ExperienceTimeline from '../components/ExperienceTimeline'
 import ProjectsSection from './projects/ProjectsSection'
+import CommunitySection from '../components/CommunitySection'
+
 import {
   profile,
   about,
   experience,
-  community,
+  // community,
   education,
   languages,
   skills,
@@ -148,7 +150,7 @@ export default function Home() {
         </section>
 
         {/* ── ABOUT ── */}
-        <section id="about" style={sectionStyle}>
+        <section id="about" style={{ ...sectionStyle, maxWidth: '90%', paddingRight: '3.5rem' }}>
           <SectionHeader number="01" label="About Me" title="Who I Am" />
           {about.split('\n\n').map((para, i) => (
             <p
@@ -166,56 +168,26 @@ export default function Home() {
         </section>
 
         {/* ── EXPERIENCE ── */}
-        <section id="experience" style={sectionStyle}>
+        <section id="experience" style={{ ...sectionStyle, maxWidth: '90%', paddingRight: '3.5rem' }}>
           <SectionHeader number="02" label="Work History" title="Professional Experience" />
           {/* <Timeline items={experience} /> */}
           <ExperienceTimeline />
         </section>
 
         {/* ── PROJECTS CAROUSEL ── */}
-        <ProjectsSection />
+        <section style={{ ...sectionStyle, maxWidth: '90%', paddingRight: '3.5rem' }}>
+          <ProjectsSection />
+        </section>
+        
 
         {/* ── COMMUNITY ── */}
-        <section id="community" style={sectionStyle}>
-          <SectionHeader number="04" label="Volunteering" title="Community Work" />
-          <Timeline items={community} />
-
-          {/* Instagram block */}
-          <div
-            style={{
-              marginTop: '2rem',
-              background: 'rgba(186,167,170,0.1)',
-              border: '1px solid rgba(186,167,170,0.25)',
-              borderRadius: 10,
-              padding: '1.3rem 1.5rem',
-              display: 'flex',
-              gap: '1rem',
-              alignItems: 'flex-start',
-            }}
-          >
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#BAA7AA" strokeWidth="1.5" style={{ flexShrink: 0, marginTop: 2 }}>
-              <rect x="2" y="2" width="20" height="20" rx="5" />
-              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-            </svg>
-            <div>
-              <div style={{ fontSize: '0.88rem', fontWeight: 500, color: '#3A3530', marginBottom: '0.3rem' }}>
-                Instagram Art Community -{' '}
-                <a href={profile.instagram} target="_blank" rel="noopener noreferrer" style={{ color: '#C1A577', textDecoration: 'none' }}>
-                  {profile.instagramHandle}
-                </a>
-              </div>
-              <div style={{ fontSize: '0.82rem', color: '#7A6E68', lineHeight: 1.75 }}>
-                Built an engaged international creative community of{' '}
-                <strong style={{ color: '#BAA7AA' }}>{profile.instagramFollowers} followers</strong>{' '}
-                through organic growth and consistent drawing and painting - demonstrating art as a vehicle for human connection.
-              </div>
-            </div>
-          </div>
+        <section id="community" style={{ ...sectionStyle, maxWidth: '90%', paddingRight: '3.5rem' }}>
+          <SectionHeader number="04" label="Community Engagement" title="Community Work" />
+          <CommunitySection />
         </section>
 
         {/* ── EDUCATION ── */}
-        <section id="education" style={sectionStyle}>
+        <section id="education" style={{ ...sectionStyle, maxWidth: '90%', paddingRight: '3.5rem' }}>
           <SectionHeader number="05" label="Academic Background" title="Education" />
 
           {education.map((ed, i) => (
@@ -290,12 +262,12 @@ export default function Home() {
         </section>
 
         {/* ── SKILLS ── */}
-        <section id="skills" style={sectionStyle}>
+        <section id="skills" style={{ ...sectionStyle, maxWidth: '90%', paddingRight: '3.5rem' }}>
           <SectionHeader number="06" label="Capabilities" title="Skills" />
           <div
             style={{
               display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fill, minmax(270px, 1fr))',
+              gridTemplateColumns: 'repeat(auto-fill, minmax(370px, 1fr))',
               gap: '1.2rem',
             }}
           >
@@ -352,7 +324,7 @@ export default function Home() {
         </section>
 
         {/* ── CONTACT ── */}
-        <section id="contact" style={sectionStyle}>
+        <section id="contact" style={{ ...sectionStyle, maxWidth: '90%', paddingRight: '3.5rem' }}>
           <SectionHeader number="07" label="Get In Touch" title="Contact" />
           <div
             style={{
