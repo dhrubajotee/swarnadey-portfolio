@@ -170,12 +170,38 @@ export default function ProjectDetail({ project }) {
             }}>
               About this project
             </h3>
-            <p style={{
+            <div style={{
               fontSize: '0.87rem', lineHeight: 1.85,
               color: '#7A6E68', margin: '0 0 1.25rem 0',
             }}>
-              {fullDescription}
-            </p>
+              {/* {fullDescription} */}
+                    <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.6rem' }}>
+                      {fullDescription.map((b, i) => (
+                        <li key={i} style={{
+                          display: 'flex',
+                          gap: '0.75rem',
+                          alignItems: 'flex-start',
+                        }}>
+                          <span style={{
+                            marginTop: '0.3rem',
+                            flexShrink: 0,
+                            width: 6, height: 6,
+                            borderRadius: '50%',
+                            background: '#C1A577',
+                            border: `1.5px solid #BAA7AA`,
+                            display: 'inline-block',
+                          }} />
+                          <span style={{
+                            fontSize: '0.86rem',
+                            color: '#5A504A',
+                            lineHeight: 1.8,
+                          }}>
+                            {b}
+                          </span>
+                        </li>
+                      ))}
+                    </ul>
+            </div>
 
             {/* Tags */}
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6 }}>

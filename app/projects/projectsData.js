@@ -1,10 +1,10 @@
 export const projects = [
   {
     slug: 'taidekerho',
-    title: 'Community Art Club',
+    title: 'Art Club Founder & Community Facilitator',
     subtitle: 'Taidekerho',
     location: 'Jyväskylä, Finland',
-    period: 'Aug 2025 – Present',
+    period: 'Aug 2025 - Present',
     status: 'Ongoing',
     description:
       'A weekly, free, open-door creative space I founded at Aseman Pysäkki — growing from zero to 50+ participants across 12 nationalities in six months.',
@@ -39,14 +39,20 @@ export const projects = [
       { label: 'Christmas event', color: '#EFDCC8' },
     ],
     fullDescription:
-      'A weekly, free, open-door creative community space I founded and continue to run at Aseman Pysäkki. The club grew from zero to 50+ participants across 11–12 nationalities within six months, spanning ages 2 to elderly. Every session is themed and facilitated by me — I handle the full coordination cycle: planning, sourcing materials, communicating with participants, adapting formats for accessibility, and maintaining the welcoming atmosphere that keeps people coming back. We have organised a community art exhibition and multicultural celebration events alongside the weekly sessions. Supported by Jyväskylän Seurakunta, the club also contributes to Christmas community events and facilitates social integration for local and international visitors.',
-  },
+      // 'A weekly, free, open-door creative community space I founded and continue to run at Aseman Pysäkki. The club grew from zero to 50+ participants across 11-12 nationalities within six months, spanning ages 2 to elderly. Every session is themed and facilitated by me — I handle the full coordination cycle: planning, sourcing materials, communicating with participants, adapting formats for accessibility, and maintaining the welcoming atmosphere that keeps people coming back. We have organised a community art exhibition and multicultural celebration events alongside the weekly sessions. Supported by Jyväskylän Seurakunta, the club also contributes to Christmas community events and facilitates social integration for local and international visitors.',
+      [
+      <>Established and scaled a weekly art club to <strong>50+ participants from 10+ nationalities within 6 months</strong> by designing accessible sessions</>,
+      <>Facilitated structured group activities, improving <strong>social participation and cross-cultural interaction</strong>  </>,
+      <>Managed end-to-end coordination including planning, materials, and participant flow, ensuring <strong>consistent weekly delivery</strong></>,
+      <>Supported multicultural community events, contributing to <strong>local integration and engagement initiatives</strong>  </>
+    ]
+    },
   {
     slug: 'blog-social-media',
     title: 'International Life in Jyväskylä',
     subtitle: 'Blog & Social Media',
     location: 'Jyväskylä, Finland',
-    period: '2024 – Present',
+    period: '2024 - Present',
     status: 'Ongoing',
     description:
       'Writing and social media content documenting the realities of international life in Finland — practical guides for newcomers navigating Finnish systems.',
@@ -87,7 +93,7 @@ export const projects = [
     title: 'Instagram Art Community',
     subtitle: '@priyodorshini.d_',
     location: 'Global',
-    period: '2019 – Present',
+    period: '2019 - Present',
     status: 'Ongoing',
     description:
       'Built an engaged international creative community of 15,000+ followers through consistent original drawing and painting content — entirely organic growth.',
@@ -130,7 +136,7 @@ export const projects = [
     title: 'Urban Forestation Campaign',
     subtitle: 'Co-organiser',
     location: 'Dhaka, Bangladesh',
-    period: '2018 – 2022',
+    period: '2018 - 2022',
     status: 'Completed',
     description:
       'Planted 400+ trees in schoolyards, rooftops and community spaces through locally raised funds, alongside environmental awareness sessions in schools.',
@@ -165,14 +171,19 @@ export const projects = [
       { label: 'Awareness event', color: '#DCEEDC' },
     ],
     fullDescription:
-      'Co-organised a grassroots urban forestation campaign that planted 400+ trees in schoolyards, rooftops, and community spaces across Dhaka through locally raised funds. The campaign was built around practical action and community education: we ran environmental awareness sessions in schools and guided families on how to grow plants on rooftops and balconies — making greening accessible even in a dense urban environment. Everything was done without institutional backing, driven entirely by community commitment and peer-to-peer fundraising.',
+      [
+        <>Co-organised a campaign resulting in <strong>400+ trees planted</strong> across schools and community spaces through local fundraising</>,
+        <>Conducted environmental awareness sessions, reaching <strong>students and families at community level</strong></>,
+        <>Promoted sustainable practices by guiding households in <strong>rooftop and small-space gardening</strong></>,
+        <>Coordinated volunteers and activities across locations, ensuring <strong>efficient execution of planting and outreach</strong></>,
+      ]
   },
   {
     slug: 'street-children-night-school',
-    title: 'Street Children Night School',
+    title: 'Co-founder - Street Children Night School',
     subtitle: 'Co-founder',
     location: 'Dhaka, Bangladesh',
-    period: '2018 – 2022',
+    period: '2018 - 2022',
     status: 'Completed',
     description:
       'Co-founded informal evening lessons for working and out-of-school children in slum areas of Dhaka, sustained for five years alongside university studies.',
@@ -207,6 +218,11 @@ export const projects = [
       { label: 'Community area', color: '#EED8D0' },
     ],
     fullDescription:
-      'Co-founded and sustained informal evening lessons for working and out-of-school children in slum areas of Dhaka for five years, together with six fellow university students. We ran sessions around the children\'s own schedules and availability — outreaching directly in the community to reach those who needed it most. There was no institutional backing, no funding: only a shared commitment to making access to education more equitable. Sustaining the school for five years through our own degree programmes and employment speaks to the kind of consistency and care I bring to work I believe in.',
+      [
+        <>Co-founded and sustained an informal night school for <strong>5 years</strong>, providing education to working and out-of-school children</>,
+        <>Increased access to learning through <strong>direct community outreach</strong> and flexible, schedule-based sessions</>,
+        <>Maintained long-term program continuity alongside studies and work, ensuring <strong>consistent participation and delivery</strong></>,
+        <>Designed needs-based learning sessions, improving <strong>engagement among underserved children</strong></>
+      ]
   },
 ]

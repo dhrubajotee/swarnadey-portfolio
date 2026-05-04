@@ -16,10 +16,10 @@ import {
 } from './data'
 
 const sectionStyle = {
-  padding: '4rem 3.5rem',
+  padding: '4rem 0.1rem',
   borderBottom: '1px solid #EDE8E2',
-  width: '80%',
-  maxWidth: '960px',
+  width: '100%',
+  maxWidth: '1100px',
   margin: '0 auto',
 }
 

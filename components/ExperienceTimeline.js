@@ -8,7 +8,7 @@ const experiences = [
     roleDetail: 'Customer Service Assistant',
     org: 'Aseman Pysäkki, Jyväskylän Seurakunta',
     location: 'Jyväskylä, Finland',
-    period: 'Sept 2025 – Feb 2026',
+    period: 'Sept 2025 - Feb 2026',
     accent: '#C1A577',
     accentLight: '#F5ECD9',
     accentMid: '#E8D4B0',
@@ -21,11 +21,11 @@ const experiences = [
       </svg>
     ),
     bullets: [
-      'Provided customer service in Finnish and English, supporting daily interaction and integration into Finnish work culture',
-      'Planned and implemented group services and community events, promoting participation and inclusion',
-      'Founded and facilitated a weekly Art Club (Taidekerho), attracting 50+ participants from 10+ nationalities',
-      'Produced clear guidance materials to support new trainees',
-      'Collaborated with team members to assist operational coordination, adapting to dynamic service needs',
+      <>Delivered customer service in Finnish and English, supporting <strong>50-70 daily visitors</strong> in a multicultural community setting</>,
+      <>Planned and facilitated group activities and events, increasing <strong>participation and engagement among local and international visitors</strong></>,
+      <>Founded and scaled a weekly Art Club to <strong>50+ participants from 10+ nationalities</strong>, strengthening community inclusion </>,
+      <>Produced clear internal guidance materials, improving <strong>consistency and onboarding for new trainees</strong></>,
+      <>Supported daily operations and team coordination, adapting to <strong>dynamic service and event needs</strong> </>,
     ],
   },
   {
@@ -33,7 +33,7 @@ const experiences = [
     roleDetail: '',
     org: 'High Commission of India',
     location: 'Dhaka, Bangladesh',
-    period: 'Dec 2022 – Sept 2024',
+    period: 'Dec 2022 - Sept 2024',
     accent: '#BAA7AA',
     accentLight: '#F0E4E6',
     accentMid: '#DECCCE',
@@ -46,11 +46,11 @@ const experiences = [
       </svg>
     ),
     bullets: [
-      'Processed and managed high-priority caseloads and sensitive applicant data under strict consular confidentiality and data protection protocols',
-      'Printed 5,000+ visas per month with zero compliance or data errors, demonstrating exceptional attention to detail',
-      'Reviewed and verified documentation accuracy, identifying inconsistencies and mitigating potential compliance and fraud risks',
-      'Coordinated with senior officials to prepare workload reports, monitor processing status, and improve case flow efficiency',
-      'Resolved complex applicant inquiries via phone and email, providing accurate guidance under time-sensitive conditions',
+      <>Processed <strong>5,000+ visa applications per month with zero data or compliance errors</strong>, ensuring strict adherence to consular regulations</>,
+      <>Verified and assessed documentation, identifying inconsistencies and reducing <strong>risk of fraud and processing delays</strong></>,
+      <>Managed high-volume caseloads under pressure, maintaining <strong>accuracy, confidentiality, and processing efficiency</strong>  </>,
+      <>Coordinated with senior officials to monitor workflows and improve <strong>case processing and reporting systems</strong></>,
+      <>Resolved complex client inquiries via phone and email, delivering <strong>accurate guidance in time-sensitive situations</strong></>,
     ],
   },
   {
@@ -58,7 +58,7 @@ const experiences = [
     roleDetail: '',
     org: 'Bangladesh Institute of Social Research (BISR) Trust',
     location: 'Dhaka, Bangladesh',
-    period: 'Nov 2021 – Feb 2022',
+    period: 'Nov 2021 - Feb 2022',
     accent: '#9D9BAD',
     accentLight: '#ECEAF5',
     accentMid: '#D8D6E8',
@@ -69,9 +69,9 @@ const experiences = [
       </svg>
     ),
     bullets: [
-      'Conducted data validation, coding, and statistical analysis to support research using SPSS',
-      'Designed data collection tools and conducted fieldwork under academic and ethical standards',
-      'Assisted senior researchers with data organization and administrative documentation',
+      <>Conducted data validation, coding, and statistical analysis using <strong>SPSS</strong>, supporting research projects  </>,
+      <>Designed data collection tools and conducted fieldwork under <strong>academic and ethical standards</strong></>,
+      <>Organised datasets and documentation, improving <strong>accuracy and usability of research outputs</strong></>,
     ],
   },
 ]
