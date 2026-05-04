@@ -3,6 +3,7 @@
 import { useRef, useState } from 'react'
 import Link from 'next/link'
 import { projects } from './projectsData'
+import Image from 'next/image'
 
 export default function ProjectsSection() {
   const scrollRef = useRef(null)
@@ -147,15 +148,23 @@ function ProjectCard({ project, index }) {
         {/* Thumbnail — pastel placeholder with icon */}
         <div
           style={{
-            height: 155,
+            height: 285,
             background: project.accent,
             display: 'flex', flexDirection: 'column',
             alignItems: 'center', justifyContent: 'center',
             position: 'relative', overflow: 'hidden',
           }}
         >
+          {project.thumbnail && (
+            <Image
+              src={project.thumbnail}
+              alt={project.title}
+              fill
+              style={{ objectFit: 'cover', opacity: 0.90 }}
+            />
+          )}
           {/* Subtle watermark circles */}
-          <div style={{
+          {/* <div style={{
             position: 'absolute', top: -30, right: -30,
             width: 120, height: 120, borderRadius: '50%',
             background: 'rgba(255,255,255,0.25)',
@@ -164,10 +173,10 @@ function ProjectCard({ project, index }) {
             position: 'absolute', bottom: -20, left: -20,
             width: 80, height: 80, borderRadius: '50%',
             background: 'rgba(255,255,255,0.18)',
-          }} />
+          }} /> */}
 
           {/* Icon circle */}
-          <div style={{
+          {/* <div style={{
             width: 54, height: 54, borderRadius: '50%',
             background: 'rgba(255,255,255,0.55)',
             display: 'flex', alignItems: 'center', justifyContent: 'center',
@@ -175,7 +184,7 @@ function ProjectCard({ project, index }) {
             boxShadow: '0 2px 12px rgba(0,0,0,0.06)',
           }}>
             {project.icon}
-          </div>
+          </div> */}
 
           {/* Location */}
           <div style={{
@@ -191,10 +200,13 @@ function ProjectCard({ project, index }) {
           {isFirst3 && (
             <span style={{
               position: 'absolute', top: 10, left: 10,
-              background: 'rgba(255,255,255,0.75)',
+              // background: 'rgba(255,255,255,0.75)',
+              background: 'rgba(15, 14, 14, 0.75)',
               borderRadius: 20, padding: '2px 9px',
               fontSize: '0.6rem', letterSpacing: '0.07em',
-              color: '#9A7F55', fontWeight: 500,
+              // color: '#9A7F55',
+              color: 'rgba(255,255,255,255)',
+              fontWeight: 500,
             }}>
               Featured
             </span>
@@ -203,9 +215,12 @@ function ProjectCard({ project, index }) {
           {/* Status badge */}
           <span style={{
             position: 'absolute', top: 10, right: 10,
-            background: project.statusBg,
+            // background: project.statusBg,
+            background: 'rgba(15, 14, 14, 0.75)',
             borderRadius: 20, padding: '2px 9px',
-            fontSize: '0.6rem', color: '#3A3530',
+            fontSize: '0.6rem', 
+            // color: '#3A3530',
+            color: 'rgba(255,255,255,255)',
             letterSpacing: '0.04em',
           }}>
             {project.status}

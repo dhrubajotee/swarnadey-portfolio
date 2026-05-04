@@ -6,6 +6,7 @@ export const projects = [
     location: 'Jyväskylä, Finland',
     period: 'Aug 2025 - Present',
     status: 'Ongoing',
+    thumbnail: '/images/taidekerho.jpg',
     description:
       'A weekly, free, open-door creative space I founded at Aseman Pysäkki — growing from zero to 50+ participants across 12 nationalities in six months.',
     tags: ['Community', 'Facilitation', 'Coordination'],
@@ -52,6 +53,7 @@ export const projects = [
     title: 'International Life in Jyväskylä',
     subtitle: 'Blog Writing',
     location: 'Jyväskylä, Finland',
+    thumbnail: '/images/blog.jpg',
     period: '2025 - Present',
     status: 'Ongoing',
     description:
@@ -100,6 +102,7 @@ export const projects = [
     location: 'Global',
     period: '2019 - Present',
     status: 'Ongoing',
+    thumbnail: '/images/insta.jpg',
     description:
       'Built an engaged international creative community of 15,000+ followers through consistent original drawing and painting content — entirely organic growth.',
     tags: ['Social Media', 'Creative', 'Community Building'],
@@ -221,6 +224,7 @@ export const projects = [
     location: 'Dhaka, Bangladesh',
     period: '2015 - 2017',
     status: 'Completed',
+    thumbnail: '/images/dumuna.jpg',
     description:
       'Coordinated large-scale international Model UN conferences with 1,000+ participants, managing delegate operations and event execution. Experience in leadership, sponsorship coordination, and global policy simulation.',
     tags: ['Leadership', 'Diplomacy', 'Events'],
@@ -263,6 +267,7 @@ export const projects = [
     location: 'Dhaka, Bangladesh',
     period: '2018 - 2022',
     status: 'Completed',
+    thumbnail: '/images/forest.jpg',
     description:
       'Planted 400+ trees in schoolyards, rooftops and community spaces through locally raised funds, alongside environmental awareness sessions in schools.',
     tags: ['Environment', 'Grassroots', 'Community'],

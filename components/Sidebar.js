@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { profile, navLinks } from '../app/data'
+import Image from 'next/image'
 
 export default function Sidebar() {
   const [active, setActive] = useState('about')
@@ -71,7 +72,13 @@ export default function Sidebar() {
             letterSpacing: 1,
           }}
         >
-          SD
+          <Image
+            src="/images/SD.jpg"
+            alt="SD"
+            width={72}
+            height={72}
+            style={{ objectFit: 'cover', borderRadius: '50%' }}
+          />
         </div>
         <div
           style={{
@@ -165,8 +172,8 @@ function NavIcon({ name, isActive }) {
     ),
     Language: (
       <svg style={s} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="2">
-        <path d="M5 8l6 6"/><path d="M4 14l6-6 2-3"/><path d="M2 5h12"/><path d="M7 2h1"/>
-        <path d="M22 22l-5-10-5 10"/><path d="M14 18h6"/>
+        <path d="M5 8l6 6" /><path d="M4 14l6-6 2-3" /><path d="M2 5h12" /><path d="M7 2h1" />
+        <path d="M22 22l-5-10-5 10" /><path d="M14 18h6" />
       </svg>
     ),
     Education: (
