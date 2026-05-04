@@ -50,7 +50,7 @@ export const projects = [
   {
     slug: 'blog-social-media',
     title: 'International Life in Jyväskylä',
-    subtitle: 'Blog & Social Media',
+    subtitle: 'Blog Writing',
     location: 'Jyväskylä, Finland',
     period: '2024 - Present',
     status: 'Ongoing',
@@ -87,7 +87,11 @@ export const projects = [
     ],
     fullDescription:
       [
-        'Writing and social media content documenting the realities of international life in Finland — practical guides for newcomers navigating Finnish systems, bureaucracy, culture, and community. Created to fill a gap I noticed personally as someone who relocated to Jyväskylä from Bangladesh: honest, human, non-institutional guidance for people trying to build a life in Finland.',
+        <>Created content focused on <strong>integration, daily life, and services in Finland</strong>, targeting international residents</>,
+        <>Simplified complex information into <strong>clear, user-friendly formats</strong>, improving accessibility for newcomers</>,
+        <>Identified common challenges faced by internationals and translated them into <strong>practical guidance and content themes</strong></>,
+        <>Supported community awareness and engagement by sharing <strong>real experiences and local insights</strong> </>,
+        <><strong>WEBSITE CURRENTLY UNDER MAINTENANCE </strong></>
       ]
   },
   {
