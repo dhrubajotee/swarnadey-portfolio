@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import { useState, useEffect, useRef } from 'react'
 
 // ── DATA ─────────────────────────────────────────────────────────────────────
@@ -16,9 +17,9 @@ const communityCards = [
     accentMid: '#E8D4B0',
     // Each "photo" is a pastel placeholder — swap src for real images later
     photos: [
-      { bg: '#F5ECD9', label: 'Session overview', emoji: '🗣️' },
-      { bg: '#EDD9C0', label: 'Discussion group', emoji: '👥' },
-      { bg: '#F2E6D0', label: 'Advisor meeting', emoji: '📋' },
+      { bg: '#F5ECD9', label: 'Session overview', emoji: '🗣️', src: '/images/cf1.png' },
+      { bg: '#EDD9C0', label: 'Discussion group', emoji: '👥', src: '/images/cf2.jpg' },
+      { bg: '#F2E6D0', label: 'Advisor meeting', emoji: '📋', src: '/images/cf3.png' },
     ],
     bullets: [
       'Identified recurring challenges in employment, services, and daily life through direct engagement with international residents',
@@ -36,9 +37,8 @@ const communityCards = [
     accentLight: '#ECEAF5',
     accentMid: '#D8D6E8',
     photos: [
-      { bg: '#ECEAF5', label: 'Forum panel', emoji: '🌐' },
-      { bg: '#DDD9EE', label: 'Group dialogue', emoji: '🤝' },
-      { bg: '#E6E4F2', label: 'Regional network', emoji: '📢' },
+      { bg: '#ECEAF5', label: 'Forum panel', emoji: '🌐', src: '/images/adv1.jpg' },
+      { bg: '#DDD9EE', label: 'Group dialogue', emoji: '🤝', src: '/images/adv2.jpg' },
     ],
     bullets: [
       'Engaged in regional dialogue on employment, inclusion, and access to opportunities for international residents',
@@ -56,9 +56,9 @@ const communityCards = [
     accentLight: '#F0E4E6',
     accentMid: '#DECCCE',
     photos: [
-      { bg: '#F0E4E6', label: 'Cultural event', emoji: '🎭' },
-      { bg: '#E4D4D6', label: 'Bangladesh booth', emoji: '🇧🇩' },
-      { bg: '#EAD8DA', label: 'Event coordination', emoji: '📌' },
+      { bg: '#F0E4E6', label: 'Cultural event', emoji: '🎭', src: '/images/vc1.jpg' },
+      { bg: '#E4D4D6', label: 'Bangladesh booth', emoji: '🇧🇩', src: '/images/vc2.jpg' },
+      { bg: '#EAD8DA', label: 'Event coordination', emoji: '📌', src: '/images/vc3.jpg' },
     ],
     bullets: [
       'Supported coordination of multicultural events with diverse community participation',
@@ -76,9 +76,8 @@ const communityCards = [
     accentLight: '#E8F0E4',
     accentMid: '#D0E0CA',
     photos: [
-      { bg: '#E8F0E4', label: 'Coffee House', emoji: '☕' },
-      { bg: '#DCECD6', label: 'Kitchen support', emoji: '🍽️' },
-      { bg: '#E2EEDe', label: 'Church events', emoji: '🕊️' },
+      { bg: '#E8F0E4', label: 'Coffee House', emoji: '☕', src: '/images/cs1.jpg' },
+      { bg: '#DCECD6', label: 'Kitchen support', emoji: '🍽️', src: '/images/cs2.jpg' },
     ],
     bullets: [
       'Supported community services including International Coffee House, assisting in food service, kitchen operations, and visitor support',
@@ -96,9 +95,9 @@ const communityCards = [
     accentLight: '#EDE8F5',
     accentMid: '#D8D0E8',
     photos: [
-      { bg: '#EDE8F5', label: 'Orientation module', emoji: '🏛️' },
-      { bg: '#E2DCF0', label: 'Civic learning', emoji: '📚' },
-      { bg: '#E8E0F2', label: 'Group sessions', emoji: '🤲' },
+      { bg: '#EDE8F5', label: 'Orientation module', emoji: '🏛️', src: '/images/co1.jpg' },
+      { bg: '#E2DCF0', label: 'Civic learning', emoji: '📚', src: '/images/co2.jpg' },
+      { bg: '#E8E0F2', label: 'Group sessions', emoji: '🤲', src: '/images/co3.jpg' },
     ],
     bullets: [
       'Built practical understanding of Finnish society, public services, and municipal systems through structured, real-life learning modules',
@@ -116,9 +115,7 @@ const communityCards = [
     accentLight: '#F5ECD9',
     accentMid: '#E8D4B0',
     photos: [
-      { bg: '#F5ECD9', label: 'Museum events', emoji: '🎨' },
-      { bg: '#EDD9C0', label: 'Public activities', emoji: '🖼️' },
-      { bg: '#F2E6D0', label: 'Finnish language', emoji: '🇫🇮' },
+      { bg: '#F5ECD9', label: 'Museum events', emoji: '🎨', src: '/images/tm1.jpg' },
     ],
     bullets: [
       'Volunteer for event logistics and public activities at the museum',
@@ -234,7 +231,7 @@ function CommunityCard({ card }) {
       }}
     >
       {/* Photo area */}
-      <div style={{ position: 'relative', height: 180, overflow: 'hidden', flexShrink: 0 }}>
+      <div style={{ position: 'relative', height: 280, overflow: 'hidden', flexShrink: 0 }}>
         {/* Crossfading photos */}
         {card.photos.map((p, i) => (
           <div
@@ -251,7 +248,16 @@ function CommunityCard({ card }) {
               gap: 8,
             }}
           >
-            {/* Decorative blobs */}
+            {p.src && (
+              <Image
+                src={p.src}
+                alt={p.label}
+                fill
+                style={{ objectFit: 'cover', opacity: 0.9 }}
+              />
+            )}
+
+            {/* Decorative blobs
             <div style={{
               position: 'absolute', top: -30, right: -30,
               width: 120, height: 120, borderRadius: '50%',
@@ -261,10 +267,10 @@ function CommunityCard({ card }) {
               position: 'absolute', bottom: -20, left: -20,
               width: 80, height: 80, borderRadius: '50%',
               background: 'rgba(255,255,255,0.2)',
-            }} />
+            }} /> */}
 
             {/* Emoji icon */}
-            <div style={{
+            {/* <div style={{
               width: 56, height: 56, borderRadius: '50%',
               background: 'rgba(255,255,255,0.6)',
               display: 'flex', alignItems: 'center',
@@ -273,10 +279,10 @@ function CommunityCard({ card }) {
               position: 'relative', zIndex: 1,
             }}>
               {p.emoji}
-            </div>
+            </div> */}
 
             {/* Label */}
-            <div style={{
+            {/* <div style={{
               fontSize: '0.65rem', color: '#7A6E68',
               background: 'rgba(255,255,255,0.65)',
               borderRadius: 20, padding: '2px 10px',
@@ -284,7 +290,7 @@ function CommunityCard({ card }) {
               letterSpacing: '0.04em',
             }}>
               {p.label}
-            </div>
+            </div> */}
           </div>
         ))}
 

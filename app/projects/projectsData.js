@@ -315,6 +315,7 @@ export const projects = [
     location: 'Dhaka, Bangladesh',
     period: '2018 - 2022',
     status: 'Completed',
+    thumbnail: '/images/child.png',
     description:
       'Co-founded informal evening lessons for working and out-of-school children in slum areas of Dhaka, sustained for five years alongside university studies.',
     tags: ['Education', 'Grassroots', 'Youth'],
