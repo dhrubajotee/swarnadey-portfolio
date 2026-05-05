@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import { useState } from 'react'
 
 const finnishCredentials = [
@@ -9,6 +10,7 @@ const finnishCredentials = [
     status: 'Starting May 2026',
     color: '#C1A577',
     bg: '#F5ECD9',
+    src: '/images/spring_house.jpg'
   },
   {
     org: 'Xamk',
@@ -16,6 +18,7 @@ const finnishCredentials = [
     status: 'Completed Mar 2026',
     color: '#BAA7AA',
     bg: '#F0E4E6',
+    src: '/images/xamk.png'
   },
   {
     org: 'GRADIA',
@@ -23,6 +26,7 @@ const finnishCredentials = [
     status: 'Nov 2025 – 2026',
     color: '#9D9BAD',
     bg: '#ECEAF5',
+    src: '/images/gradia.jpg'
   },
 ]
 
@@ -97,18 +101,13 @@ export default function LanguageSection() {
         gap: '1rem',
         paddingTop: '0.3rem',
       }}>
-        <PhotoPlaceholder
-          label="Photo 1"
-          bg="#F5ECD9"
-          accentBorder="#E8D4B0"
-          hint="Add your photo here"
-        />
-        <PhotoPlaceholder
+        <Image src="/images/language.jpg" alt="Language Club" width={200} height={200} style={{ objectFit: 'cover' }} borderRadius={14} />
+        {/* <PhotoPlaceholder
           label="Photo 2"
           bg="#ECEAF5"
           accentBorder="#D8D6E8"
           hint="Add your photo here"
-        />
+        /> */}
       </div>
 
     </div>
@@ -236,14 +235,15 @@ function CredentialBadge({ cred }) {
         position: 'relative',
       }}>
         {/* Placeholder text — replace with <img> */}
-        <span style={{
+        {/* <span style={{
           fontSize: '0.52rem', color: cred.color,
           textAlign: 'center', lineHeight: 1.2,
           letterSpacing: '0.02em',
           userSelect: 'none',
         }}>
           LOGO
-        </span>
+        </span> */}
+        <Image src={cred.src} fill style={{ objectFit: 'cover', borderRadius: '50%' }}/>
       </div>
 
       {/* Text */}
@@ -334,7 +334,7 @@ function SmallLangCard({ lang }) {
 
 // ── PHOTO PLACEHOLDER ─────────────────────────────────────────────────────────
 
-function PhotoPlaceholder({ label, bg, accentBorder, hint }) {
+function PhotoPlaceholder({ src, label, bg, accentBorder, hint }) {
   return (
     <div style={{
       height: 200,
@@ -349,7 +349,7 @@ function PhotoPlaceholder({ label, bg, accentBorder, hint }) {
       cursor: 'default',
     }}>
       {/* Camera icon */}
-      <div style={{
+      {/* <div style={{
         width: 44, height: 44,
         borderRadius: '50%',
         background: 'rgba(255,255,255,0.65)',
@@ -361,7 +361,8 @@ function PhotoPlaceholder({ label, bg, accentBorder, hint }) {
           <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
           <circle cx="12" cy="13" r="4"/>
         </svg>
-      </div>
+      </div> */}
+      {/* <Image src={src} alt={label} width={200} height={200} style={{ objectFit: 'cover' }} /> */}
       <div style={{ fontSize: '0.68rem', color: '#BAA7AA', letterSpacing: '0.05em', textAlign: 'center', lineHeight: 1.5 }}>
         {hint}
       </div>
