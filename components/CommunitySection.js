@@ -88,7 +88,7 @@ const communityCards = [
   {
     id: 5,
     category: 'Civic',
-    title: 'Participant — Civic Orientation Programme',
+    title: 'Civic Orientation Programme',
     org: 'International House Jyväskylä · City of Jyväskylä',
     date: '2026',
     accent: '#B8A8C8',
@@ -352,7 +352,7 @@ function CommunityCard({ card }) {
         {/* Title */}
         <h3 style={{
           fontFamily: '"Cormorant Garamond", serif',
-          fontSize: '1.05rem', fontWeight: 600,
+          fontSize: '1.65rem', fontWeight: 900,
           color: '#3A3530', lineHeight: 1.25, margin: 0,
         }}>
           {card.title}
