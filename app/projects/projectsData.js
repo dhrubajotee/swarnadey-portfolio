@@ -32,12 +32,12 @@ export const projects = [
       { year: '2026', label: 'Ongoing', icon: '✨' },
     ],
     gallery: [
-      { label: 'Weekly session', color: '#F2E6D4' },
-      { label: 'Art materials', color: '#EDD9C0' },
-      { label: 'Community table', color: '#F7EDE0' },
-      { label: 'Participants', color: '#E8D4B8' },
-      { label: 'Art display', color: '#F4E8D8' },
-      { label: 'Christmas event', color: '#EFDCC8' },
+      // { label: 'Weekly session', color: '#F2E6D4', src: '/images/ws.jpg' },
+      { label: 'Art materials', color: '#EDD9C0', src: '/images/ws1.jpg' },
+      { label: 'Community table', color: '#F7EDE0', src: '/images/ws2.jpg' },
+      { label: 'Participants', color: '#E8D4B8', src: '/images/ws3.jpg' },
+      { label: 'Art display', color: '#F4E8D8', src: '/images/ws4.jpg' },
+      // { label: 'Christmas event', color: '#EFDCC8' },
     ],
     fullDescription:
       // 'A weekly, free, open-door creative community space I founded and continue to run at Aseman Pysäkki. The club grew from zero to 50+ participants across 11-12 nationalities within six months, spanning ages 2 to elderly. Every session is themed and facilitated by me — I handle the full coordination cycle: planning, sourcing materials, communicating with participants, adapting formats for accessibility, and maintaining the welcoming atmosphere that keeps people coming back. We have organised a community art exhibition and multicultural celebration events alongside the weekly sessions. Supported by Jyväskylän Seurakunta, the club also contributes to Christmas community events and facilitates social integration for local and international visitors.',

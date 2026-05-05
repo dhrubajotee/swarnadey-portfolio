@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
 
@@ -55,7 +56,7 @@ export default function ProjectDetail({ project }) {
         <span style={{ fontSize: '0.75rem', color: '#7A6E68' }}>{title}</span>
       </div>
 
-      <div style={{ maxWidth: 960, margin: '0 auto', padding: '3rem 2.5rem' }}>
+      <div style={{ maxWidth: '90%', margin: '0 auto', padding: '3rem 2.5rem' }}>
         {/* Back link */}
         <Link
           href="/#projects"
@@ -108,17 +109,9 @@ export default function ProjectDetail({ project }) {
               position: 'relative', overflow: 'hidden',
               marginBottom: '1.5rem',
             }}>
+              {/* <Image src="/images/taidekerho.jpg" fill style={{ objectFit: 'contain', borderRadius: 8 }} /> */}
               {/* Decorative circles */}
-              <div style={{
-                position: 'absolute', top: -40, right: -40,
-                width: 160, height: 160, borderRadius: '50%',
-                background: 'rgba(255,255,255,0.3)',
-              }} />
-              <div style={{
-                position: 'absolute', bottom: -30, left: -30,
-                width: 110, height: 110, borderRadius: '50%',
-                background: 'rgba(255,255,255,0.2)',
-              }} />
+              
 
               {/* Icon */}
               <div style={{
@@ -151,15 +144,15 @@ export default function ProjectDetail({ project }) {
               </span>
 
               {/* Cover image placeholder label */}
-              <span style={{
+              {/* <span style={{
                 position: 'absolute', bottom: 14, left: 14,
                 background: 'rgba(255,255,255,0.55)',
                 borderRadius: 8, padding: '3px 10px',
                 fontSize: '0.6rem', color: '#9D9BAD',
                 letterSpacing: '0.05em',
               }}>
-                Cover photo placeholder
-              </span>
+                <Image src="/images/taidekerho.jpg" fill style={{ objectFit: 'cover', borderRadius: 8 }} />
+              </span> */}
             </div>
 
             {/* About */}
@@ -278,7 +271,7 @@ export default function ProjectDetail({ project }) {
 
             {/* Stats grid */}
             <div style={{
-              display: 'grid', gridTemplateColumns: '1fr 1fr',
+              display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)',
               gap: '0.65rem', marginBottom: '1.5rem',
             }}>
               {stats.map((stat, i) => (
@@ -324,19 +317,21 @@ export default function ProjectDetail({ project }) {
                 fontSize: '0.75rem', color: '#BAA7AA',
                 marginBottom: '0.65rem',
                 letterSpacing: '0.05em',
+                position: 'relative',
+                overflow: 'hidden'
               }}>
-                <span style={{ fontSize: '1.4rem', opacity: 0.5 }}>🖼</span>
-                {gallery[activeGallery]?.label || 'Photo placeholder'}
+                {/* <Image src="/images/ws.jpg" width={400} height={130} style={{ objectFit: 'cover' }} /> */}
+                
               </div>
 
               {/* Thumbnails */}
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '0.45rem' }}>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '0.45rem' }}>
                 {gallery.map((g, i) => (
                   <div
                     key={i}
                     onClick={() => setActiveGallery(i)}
                     style={{
-                      height: 56, background: g.color,
+                      height: 156, background: g.color,
                       borderRadius: 8,
                       display: 'flex', alignItems: 'center', justifyContent: 'center',
                       fontSize: '0.58rem', color: '#BAA7AA',
@@ -345,9 +340,12 @@ export default function ProjectDetail({ project }) {
                       transition: 'border 0.15s',
                       textAlign: 'center', padding: 4,
                       letterSpacing: '0.04em',
+                      position: 'relative',   // add this
+                      overflow: 'hidden'
                     }}
                   >
-                    {g.label}
+                    {/* {g.label} */}
+                    {<Image src={g.src} height={86} width={250} style={{ objectFit: 'cover' }} />}
                   </div>
                 ))}
               </div>
