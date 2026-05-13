@@ -141,7 +141,14 @@ function FinnishCard() {
       {/* Header row */}
       <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', marginBottom: '0.8rem' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.7rem' }}>
-          <span style={{ fontSize: '1.5rem' }}>🇫🇮</span>
+          {/* <span style={{ fontSize: '1.5rem' }}>🇫🇮</span> */}
+          <img
+              src={`https://flagcdn.com/w40/fi.png`}
+              width={28}
+              height={20}
+              alt={'FI'}
+              style={{ borderRadius: 3, objectFit: 'cover' }}
+            />
           <div>
             <div style={{
               fontFamily: '"Cormorant Garamond", serif',
