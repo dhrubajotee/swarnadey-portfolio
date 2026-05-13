@@ -16,6 +16,7 @@ import {
   education,
   languages,
   skills,
+  contact
 } from './data'
 
 const sectionStyle = {

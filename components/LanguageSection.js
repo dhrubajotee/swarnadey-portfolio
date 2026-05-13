@@ -35,6 +35,7 @@ const otherLanguages = [
     name: 'Bengali',
     level: 'Native',
     flag: '🇧🇩',
+    countryCode: 'bd',
     accent: '#C1A577',
     accentLight: '#F5ECD9',
     accentMid: '#E8D4B0',
@@ -45,6 +46,7 @@ const otherLanguages = [
     level: 'C1 — Full Professional',
     sublevel: 'IELTS 7.5',
     flag: '🇬🇧',
+    countryCode: 'gb',
     accent: '#9D9BAD',
     accentLight: '#ECEAF5',
     accentMid: '#D8D6E8',
@@ -54,6 +56,7 @@ const otherLanguages = [
     name: 'Hindi',
     level: 'Spoken Proficiency',
     flag: '🇮🇳',
+    countryCode: 'in',
     accent: '#BAA7AA',
     accentLight: '#F0E4E6',
     accentMid: '#DECCCE',
@@ -88,6 +91,7 @@ export default function LanguageSection() {
         <div style={{ display: 'flex', flexDirection: 'row', gap: '0.75rem' }}>
           {otherLanguages.map((lang, i) => (
             <SmallLangCard key={i} lang={lang} />
+            
           ))}
         </div>
       </div>
@@ -297,7 +301,14 @@ function SmallLangCard({ lang }) {
     >
       {/* Flag + level bar */}
       <div style={{ display: 'flex', alignItems: 'center', gap: '0.65rem', flexShrink: 0 }}>
-        <span style={{ fontSize: '1.3rem' }}>{lang.flag}</span>
+        {/* <span style={{ fontSize: '1.3rem' }}>{lang.flag}</span> */}
+        <img
+              src={`https://flagcdn.com/w40/${lang.countryCode}.png`}
+              width={28}
+              height={20}
+              alt={lang.name}
+              style={{ borderRadius: 3, objectFit: 'cover' }}
+            />
       </div>
 
       {/* Name + level */}
