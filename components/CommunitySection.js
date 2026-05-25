@@ -58,7 +58,7 @@ const communityCards = [
     photos: [
       { bg: '#F0E4E6', label: 'Cultural event', emoji: '🎭', src: '/images/vc1.jpg' },
       { bg: '#E4D4D6', label: 'Bangladesh booth', emoji: '🇧🇩', src: '/images/vc2.jpg' },
-      { bg: '#EAD8DA', label: 'Event coordination', emoji: '📌', src: '/images/vc3.jpg' },
+      // { bg: '#EAD8DA', label: 'Event coordination', emoji: '📌', src: '/images/vc3.jpg' },
     ],
     bullets: [
       'Supported coordination of multicultural events with diverse community participation',
@@ -97,7 +97,7 @@ const communityCards = [
     photos: [
       { bg: '#EDE8F5', label: 'Orientation module', emoji: '🏛️', src: '/images/co1.jpg' },
       { bg: '#E2DCF0', label: 'Civic learning', emoji: '📚', src: '/images/co2.jpg' },
-      { bg: '#E8E0F2', label: 'Group sessions', emoji: '🤲', src: '/images/co3.jpg' },
+      // { bg: '#E8E0F2', label: 'Group sessions', emoji: '🤲', src: '/images/co3.jpg' },
     ],
     bullets: [
       'Built practical understanding of Finnish society, public services, and municipal systems through structured, real-life learning modules',
@@ -116,6 +116,7 @@ const communityCards = [
     accentMid: '#E8D4B0',
     photos: [
       { bg: '#F5ECD9', label: 'Museum events', emoji: '🎨', src: '/images/tm1.jpg' },
+      { bg: '#F5ECD9', label: 'Museum Art', emoji: '🎨', src: '/images/tm2.jpg' },
     ],
     bullets: [
       'Volunteer for event logistics and public activities at the museum',
