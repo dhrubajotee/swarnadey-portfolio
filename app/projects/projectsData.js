@@ -267,7 +267,7 @@ export const projects = [
     location: 'Dhaka, Bangladesh',
     period: '2018 - 2022',
     status: 'Completed',
-    thumbnail: '/images/forest.jpg',
+    thumbnail: '/images/forest.JPG',
     description:
       'Planted 400+ trees in schoolyards, rooftops and community spaces through locally raised funds, alongside environmental awareness sessions in schools.',
     tags: ['Environment', 'Grassroots', 'Community'],
