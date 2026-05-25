@@ -7,7 +7,7 @@ const finnishCredentials = [
   {
     org: 'Spring House Oy',
     detail: 'Integration Training, Jyväskylä',
-    status: 'Starting May 2026',
+    status: 'May 2026 - Ongoing',
     color: '#C1A577',
     bg: '#F5ECD9',
     src: '/images/spring_house.jpg'
