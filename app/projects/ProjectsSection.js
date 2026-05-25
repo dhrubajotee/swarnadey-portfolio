@@ -26,22 +26,11 @@ export default function ProjectsSection() {
   }
 
   return (
-    <section id="projects" style={{ padding: '4rem 0.1rem', borderBottom: '1px solid #EDE8E2', width: '100%', 
+    <section id="projects" style={{ padding: '0.1rem 0.1rem', borderBottom: '1px solid #EDE8E2', width: '100%', 
         margin: '0 auto', }}>
       {/* Header */}
       <div style={{ marginBottom: '2rem' }}>
-        <div style={{
-          fontSize: '0.72rem', color: '#BAA7AA', letterSpacing: '0.13em',
-          textTransform: 'uppercase', marginBottom: '0.5rem', fontWeight: 500,
-        }}>
-          03 — Projects & Initiatives
-        </div>
-        <h2 style={{
-          fontFamily: '"Cormorant Garamond", serif', fontSize: '2rem',
-          fontWeight: 600, color: '#3A3530', lineHeight: 1.2, marginBottom: '0.6rem',
-        }}>
-          Work & <em style={{ fontStyle: 'italic', fontWeight: 400 }}>Initiatives</em>
-        </h2>
+        
         <p style={{ fontSize: '0.88rem', color: '#7A6E68', lineHeight: 1.75, maxWidth: 520, margin: 0 }}>
           Community projects, creative work, and volunteer initiatives spanning Finland and Bangladesh.
           The first three are always visible — scroll right to explore more.

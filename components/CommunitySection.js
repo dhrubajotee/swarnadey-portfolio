@@ -139,10 +139,10 @@ export default function CommunitySection() {
     <div>
       {/* Micro tagline */}
       <p style={{
-        fontSize: '0.84rem',
+        fontSize: '0.94rem',
         color: '#7A6E68',
         lineHeight: 1.75,
-        maxWidth: 580,
+        maxWidth: 880,
         marginBottom: '1.8rem',
         fontStyle: 'italic',
       }}>

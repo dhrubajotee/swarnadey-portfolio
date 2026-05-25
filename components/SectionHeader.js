@@ -4,18 +4,18 @@ export default function SectionHeader({ number, label, title }) {
       <div
         style={{
           fontSize: '0.75rem',
-          color: 'var(--text-muted)',
+          color: 'var(--accent-primary)',
           letterSpacing: '0.15em',
           textTransform: 'uppercase',
           marginBottom: '0.6rem',
-          fontWeight: 500,
+          fontWeight: 600,
           display: 'flex',
           alignItems: 'center',
           gap: '0.6rem',
         }}
       >
         <span style={{ color: 'var(--accent-primary)', fontWeight: 600 }}>{number}</span>
-        <span style={{ width: 24, height: 1, background: 'var(--text-muted)', display: 'inline-block' }} />
+        <span style={{ width: 24, height: 2, background: 'var(--text-muted)', display: 'inline-block' }} />
         {label}
       </div>
       <h2

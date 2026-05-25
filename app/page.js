@@ -220,6 +220,7 @@ export default function Home() {
 
         {/* ── PROJECTS CAROUSEL ── */}
         <section style={{ ...sectionStyle, maxWidth: '90%', paddingRight: '3.5rem' }}>
+          <SectionHeader number="03" label="Projects & Initiatives" title="Work & Initiatives" />
           <ProjectsSection />
         </section>
 

@@ -8,7 +8,7 @@ const finnishCredentials = [
     org: 'Spring House Oy',
     detail: 'Integration Training, Jyväskylä',
     status: 'May 2026 - Ongoing',
-    color: '#C1A577',
+    color: '#563c13',
     bg: '#F5ECD9',
     src: '/images/spring_house.jpg'
   },
@@ -16,15 +16,15 @@ const finnishCredentials = [
     org: 'Xamk',
     detail: "Beginner's Finnish 1 · 2 ECTS",
     status: 'Completed Mar 2026',
-    color: '#BAA7AA',
+    color: '#643a41',
     bg: '#F0E4E6',
     src: '/images/xamk.png'
   },
   {
     org: 'GRADIA',
     detail: 'Jyväskylä Educational Consortium',
-    status: 'Nov 2025 – 2026',
-    color: '#9D9BAD',
+    status: 'Nov 2025 - May 2026',
+    color: '#3e3968',
     bg: '#ECEAF5',
     src: '/images/gradia.jpg'
   },
@@ -36,28 +36,28 @@ const otherLanguages = [
     level: 'Native',
     flag: '🇧🇩',
     countryCode: 'bd',
-    accent: '#C1A577',
+    accent: '#bb2b78',
     accentLight: '#F5ECD9',
     accentMid: '#E8D4B0',
-    description: 'Mother tongue — full fluency in speaking, reading, and writing.',
+    description: 'Mother tongue - full fluency in speaking, reading, and writing.',
   },
   {
     name: 'English',
-    level: 'C1 — Full Professional',
+    level: 'C1 - Full Professional',
     sublevel: 'IELTS 7.5',
     flag: '🇬🇧',
     countryCode: 'gb',
-    accent: '#9D9BAD',
+    accent: '#bb2b78',
     accentLight: '#ECEAF5',
     accentMid: '#D8D6E8',
-    description: 'Full professional proficiency across all contexts — academic, administrative, and interpersonal.',
+    description: 'Full professional proficiency across all contexts - academic, administrative, and interpersonal.',
   },
   {
     name: 'Hindi',
     level: 'Spoken Proficiency',
     flag: '🇮🇳',
     countryCode: 'in',
-    accent: '#BAA7AA',
+    accent: '#bb2b78',
     accentLight: '#F0E4E6',
     accentMid: '#DECCCE',
     description: 'Conversational spoken proficiency through cultural exposure and multilingual environments.',
@@ -81,7 +81,7 @@ export default function LanguageSection() {
         }}>
           <div style={{ flex: 1, height: 1, background: '#EDE8E2' }} />
           <span style={{
-            fontSize: '0.65rem', color: '#C5C3D0',
+            fontSize: '0.65rem', color: '#655f84',
             letterSpacing: '0.1em', textTransform: 'uppercase',
           }}>Other Languages</span>
           <div style={{ flex: 1, height: 1, background: '#EDE8E2' }} />
@@ -157,7 +157,7 @@ function FinnishCard() {
             }}>
               Finnish
             </div>
-            <div style={{ fontSize: '0.75rem', color: '#C1A577', fontWeight: 500 }}>
+            <div style={{ fontSize: '0.75rem', color: '#5c5346', fontWeight: 500 }}>
               A1.2 Basic
             </div>
           </div>
@@ -167,7 +167,7 @@ function FinnishCard() {
           fontSize: '0.62rem', letterSpacing: '0.07em',
           background: 'rgba(193,165,119,0.15)',
           border: '1px solid rgba(193,165,119,0.3)',
-          color: '#9A7F55', borderRadius: 20,
+          color: '#2b1f0a', borderRadius: 20,
           padding: '3px 10px', fontWeight: 500,
           whiteSpace: 'nowrap',
         }}>
@@ -197,14 +197,14 @@ function FinnishCard() {
 
       {/* Credential badges row */}
       <div style={{
-        fontSize: '0.65rem', color: '#BAA7AA',
+        fontSize: '0.65rem', color: '#6e5c5f',
         textTransform: 'uppercase', letterSpacing: '0.1em',
         marginBottom: '0.75rem', fontWeight: 500,
       }}>
         Qualifications & Courses
       </div>
 
-      <div style={{ display: 'flex', flexDirection: 'column', gap: '0.65rem' }}>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '0.65rem', fontWeight:'bold' }}>
         {finnishCredentials.map((cred, i) => (
           <CredentialBadge key={i} cred={cred} />
         ))}
@@ -225,7 +225,7 @@ function CredentialBadge({ cred }) {
       style={{
         display: 'flex',
         alignItems: 'center',
-        gap: '0.8rem',
+        gap: '0.9rem',
         background: hovered ? cred.bg : 'rgba(255,255,255,0.6)',
         border: `1px solid ${hovered ? cred.color + '55' : '#EDE8E2'}`,
         borderRadius: 10,
@@ -236,7 +236,7 @@ function CredentialBadge({ cred }) {
     >
       {/* Logo placeholder circle */}
       <div style={{
-        width: 36, height: 36, minWidth: 36,
+        width: 46, height: 46, minWidth: 46,
         borderRadius: '50%',
         background: cred.bg,
         border: `1.5px dashed ${cred.color}88`,
@@ -245,15 +245,6 @@ function CredentialBadge({ cred }) {
         overflow: 'hidden',
         position: 'relative',
       }}>
-        {/* Placeholder text — replace with <img> */}
-        {/* <span style={{
-          fontSize: '0.52rem', color: cred.color,
-          textAlign: 'center', lineHeight: 1.2,
-          letterSpacing: '0.02em',
-          userSelect: 'none',
-        }}>
-          LOGO
-        </span> */}
         <Image src={cred.src} fill style={{ objectFit: 'cover', borderRadius: '50%' }}/>
       </div>
 
