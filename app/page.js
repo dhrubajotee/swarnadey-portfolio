@@ -21,7 +21,7 @@ import {
 
 const sectionStyle = {
   padding: '4rem 0.1rem',
-  borderBottom: '1px solid #EDE8E2',
+  borderBottom: '1px solid var(--border)',
   width: '100%',
   maxWidth: '1100px',
   margin: '0 auto',
@@ -29,7 +29,7 @@ const sectionStyle = {
 
 export default function Home() {
   return (
-    <div style={{ display: 'flex', height: '100vh', overflow: 'hidden', background: '#FAF7F2' }}>
+    <div style={{ display: 'flex', height: '100vh', overflow: 'hidden', background: 'var(--bg-main)' }}>
       <Sidebar />
 
       <main
@@ -40,8 +40,8 @@ export default function Home() {
         <section
           style={{
             padding: '5rem 3.5rem 4rem',
-            background: '#F2EDE4',
-            borderBottom: '1px solid #E0D6CB',
+            background: 'var(--bg-main)',
+            borderBottom: '1px solid var(--border)',
             position: 'relative',
             overflow: 'hidden',
           }}
@@ -76,7 +76,7 @@ export default function Home() {
             <div
               style={{
                 fontSize: '0.78rem',
-                color: '#BAA7AA',
+                color: 'var(--text-muted)',
                 letterSpacing: '0.16em',
                 textTransform: 'uppercase',
                 marginBottom: '0.9rem',
@@ -90,7 +90,7 @@ export default function Home() {
                 fontFamily: '"Cormorant Garamond", serif',
                 fontSize: '3.6rem',
                 fontWeight: 700,
-                color: '#3A3530',
+                color: 'var(--text-primary)',
                 lineHeight: 1.05,
                 marginBottom: '0.8rem',
               }}
@@ -102,7 +102,7 @@ export default function Home() {
                 fontFamily: '"Cormorant Garamond", serif',
                 fontSize: '1.2rem',
                 fontStyle: 'italic',
-                color: '#C1A577',
+                color: 'var(--accent-primary)',
                 marginBottom: '1.2rem',
               }}
             >
@@ -111,7 +111,7 @@ export default function Home() {
             <p
               style={{
                 fontSize: '0.95rem',
-                color: '#7A6E68',
+                color: 'var(--text-secondary)',
                 maxWidth: 560,
                 lineHeight: 1.85,
                 marginBottom: '2rem',
@@ -122,7 +122,7 @@ export default function Home() {
             <p
               style={{
                 fontSize: '0.95rem',
-                color: '#7A6E68',
+                color: 'var(--text-secondary)',
                 maxWidth: 560,
                 lineHeight: 1.85,
                 marginBottom: '1rem',
@@ -164,8 +164,8 @@ export default function Home() {
                   flexShrink: 0,
                   width: 6, height: 6,
                   borderRadius: '50%',
-                  background: '#C1A577',
-                  border: `1.5px solid #BAA7AA`,
+                  background: 'var(--accent-primary)',
+                  border: `1.5px solid var(--text-muted)`,
                   display: 'inline-block',
                 }} /> Experienced in <strong>high-volume administrative processes</strong>, handling 5,000+ monthly cases with accuracy and compliance</li>
               <li><span style={{
@@ -173,8 +173,8 @@ export default function Home() {
                 flexShrink: 0,
                 width: 6, height: 6,
                 borderRadius: '50%',
-                background: '#C1A577',
-                border: `1.5px solid #BAA7AA`,
+                background: 'var(--accent-primary)',
+                border: `1.5px solid var(--text-muted)`,
                 display: 'inline-block',
               }} /> Strong in <strong>coordination and service delivery</strong>, supporting daily operations and multicultural community environments  </li>
 
@@ -183,8 +183,8 @@ export default function Home() {
                 flexShrink: 0,
                 width: 6, height: 6,
                 borderRadius: '50%',
-                background: '#C1A577',
-                border: `1.5px solid #BAA7AA`,
+                background: 'var(--accent-primary)',
+                border: `1.5px solid var(--text-muted)`,
                 display: 'inline-block',
               }} /> Proven ability to <strong>initiate and scale community projects</strong>, including building a 50+ member international art group in Finland  </li>
               <li><span style={{
@@ -192,8 +192,8 @@ export default function Home() {
                 flexShrink: 0,
                 width: 6, height: 6,
                 borderRadius: '50%',
-                background: '#C1A577',
-                border: `1.5px solid #BAA7AA`,
+                background: 'var(--accent-primary)',
+                border: `1.5px solid var(--text-muted)`,
                 display: 'inline-block',
               }} /> Skilled in <strong>cross-cultural communication</strong>, working with diverse stakeholders in both Bangladesh and Finland    </li>
               <li><span style={{
@@ -201,8 +201,8 @@ export default function Home() {
                 flexShrink: 0,
                 width: 6, height: 6,
                 borderRadius: '50%',
-                background: '#C1A577',
-                border: `1.5px solid #BAA7AA`,
+                background: 'var(--accent-primary)',
+                border: `1.5px solid var(--text-muted)`,
                 display: 'inline-block',
               }} /> Currently developing <strong>Finnish language and local system knowledge</strong>, with active involvement in community and integration initiatives     </li>
 
@@ -259,13 +259,13 @@ export default function Home() {
                   fontFamily: '"Cormorant Garamond", serif',
                   fontSize: '1.2rem',
                   fontWeight: 700,
-                  color: '#C1A577',
+                  color: 'var(--accent-primary)',
                 }}
               >
                 {ed.initial}
               </div>
               <div>
-                <div style={{ fontSize: '0.95rem', fontWeight: 500, color: '#3A3530', marginBottom: '0.2rem' }}>
+                <div style={{ fontSize: '0.95rem', fontWeight: 500, color: 'var(--text-primary)', marginBottom: '0.2rem' }}>
                   {ed.degree}
                 </div>
                 <div style={{ fontSize: '0.82rem', color: '#9D9BAD' }}>
@@ -351,7 +351,7 @@ export default function Home() {
             {[
               {
                 icon: (
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C1A577" strokeWidth="2">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent-primary)" strokeWidth="2">
                     <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
                     <polyline points="22,6 12,13 2,6" />
                   </svg>
@@ -362,7 +362,7 @@ export default function Home() {
               },
               {
                 icon: (
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#BAA7AA" strokeWidth="2">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" strokeWidth="2">
                     <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.38 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
                   </svg>
                 ),
@@ -383,7 +383,7 @@ export default function Home() {
               },
               {
                 icon: (
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C1A577" strokeWidth="2">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent-primary)" strokeWidth="2">
                     <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" /><circle cx="12" cy="10" r="3" />
                   </svg>
                 ),
@@ -395,8 +395,8 @@ export default function Home() {
               <div
                 key={i}
                 style={{
-                  background: '#F2EDE4',
-                  border: '1px solid #E0D6CB',
+                  background: 'var(--bg-main)',
+                  border: '1px solid var(--border)',
                   borderRadius: 10,
                   padding: '1.1rem 1.3rem',
                   display: 'flex',
@@ -404,8 +404,8 @@ export default function Home() {
                   gap: '0.9rem',
                   transition: 'border-color 0.2s',
                 }}
-                onMouseEnter={e => (e.currentTarget.style.borderColor = '#C1A577')}
-                onMouseLeave={e => (e.currentTarget.style.borderColor = '#E0D6CB')}
+                onMouseEnter={e => (e.currentTarget.style.borderColor = 'var(--accent-primary)')}
+                onMouseLeave={e => (e.currentTarget.style.borderColor = 'var(--border)')}
               >
                 {item.icon}
                 <div>
@@ -414,11 +414,11 @@ export default function Home() {
                   </div>
                   {item.href ? (
                     <a href={item.href} target={item.href.startsWith('http') ? '_blank' : '_self'} rel="noopener noreferrer"
-                      style={{ fontSize: '0.84rem', color: '#C1A577', textDecoration: 'none' }}>
+                      style={{ fontSize: '0.84rem', color: 'var(--accent-primary)', textDecoration: 'none' }}>
                       {item.value}
                     </a>
                   ) : (
-                    <span style={{ fontSize: '0.84rem', color: '#3A3530' }}>{item.value}</span>
+                    <span style={{ fontSize: '0.84rem', color: 'var(--text-primary)' }}>{item.value}</span>
                   )}
                 </div>
               </div>
@@ -434,11 +434,11 @@ export default function Home() {
               border: '1px solid rgba(197,195,208,0.3)',
               borderRadius: 10,
               fontSize: '0.82rem',
-              color: '#7A6E68',
+              color: 'var(--text-secondary)',
               lineHeight: 1.8,
             }}
           >
-            <div style={{ fontWeight: 500, color: '#3A3530', marginBottom: '0.5rem', fontSize: '0.85rem' }}>
+            <div style={{ fontWeight: 500, color: 'var(--text-primary)', marginBottom: '0.5rem', fontSize: '0.85rem' }}>
               Reference
             </div>
             <div>Sanna Rasinkangas - Deacon, Jyväskylän Seurakunta | sanna.rasinkangas@evl.fi | 0505497033</div>
@@ -451,8 +451,8 @@ export default function Home() {
             padding: '2rem 3.5rem',
             textAlign: 'center',
             fontSize: '0.78rem',
-            color: '#BAA7AA',
-            borderTop: '1px solid #EDE8E2',
+            color: 'var(--text-muted)',
+            borderTop: '1px solid var(--border)',
           }}
         >
           © 2026 Swarna Dey · Jyväskylä, Finland · Open to opportunities

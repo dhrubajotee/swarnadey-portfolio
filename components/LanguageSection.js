@@ -105,7 +105,7 @@ export default function LanguageSection() {
         gap: '1rem',
         paddingTop: '0.3rem',
       }}>
-        <Image src="/images/language.jpg" alt="Language Club" width={200} height={200} style={{ objectFit: 'cover' }} borderRadius={14} />
+        <Image src="/images/language.jpg" alt="Language Club" width={200} height={200} style={{ objectFit: 'cover', borderRadius:'14' }} />
         {/* <PhotoPlaceholder
           label="Photo 2"
           bg="#ECEAF5"

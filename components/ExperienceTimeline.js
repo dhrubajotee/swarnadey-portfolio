@@ -9,7 +9,7 @@ const experiences = [
     org: 'Aseman Pysäkki, Jyväskylän Seurakunta',
     location: 'Jyväskylä, Finland',
     period: 'Sept 2025 - Feb 2026',
-    accent: '#C1A577',
+    accent: '#9A7A45',
     accentLight: '#F5ECD9',
     accentMid: '#E8D4B0',
     icon: (color) => (
@@ -21,11 +21,11 @@ const experiences = [
       </svg>
     ),
     bullets: [
-      <>Delivered customer service in Finnish and English, supporting <strong>50-70 daily visitors</strong> in a multicultural community setting</>,
+      <>Delivered customer service in Finnish and English, supporting <strong>50–70 daily visitors</strong> in a multicultural community setting</>,
       <>Planned and facilitated group activities and events, increasing <strong>participation and engagement among local and international visitors</strong></>,
-      <>Founded and scaled a weekly Art Club to <strong>50+ participants from 10+ nationalities</strong>, strengthening community inclusion </>,
+      <>Founded and scaled a weekly Art Club to <strong>50+ participants from 10+ nationalities</strong>, strengthening community inclusion</>,
       <>Produced clear internal guidance materials, improving <strong>consistency and onboarding for new trainees</strong></>,
-      <>Supported daily operations and team coordination, adapting to <strong>dynamic service and event needs</strong> </>,
+      <>Supported daily operations and team coordination, adapting to <strong>dynamic service and event needs</strong></>,
     ],
   },
   {
@@ -33,7 +33,7 @@ const experiences = [
     roleDetail: '',
     org: 'High Commission of India',
     location: 'Dhaka, Bangladesh',
-    period: 'Dec 2022 - Sept 2024',
+    period: 'Dec 2022 – Sept 2024',
     accent: '#BAA7AA',
     accentLight: '#F0E4E6',
     accentMid: '#DECCCE',
@@ -48,7 +48,7 @@ const experiences = [
     bullets: [
       <>Processed <strong>5,000+ visa applications per month with zero data or compliance errors</strong>, ensuring strict adherence to consular regulations</>,
       <>Verified and assessed documentation, identifying inconsistencies and reducing <strong>risk of fraud and processing delays</strong></>,
-      <>Managed high-volume caseloads under pressure, maintaining <strong>accuracy, confidentiality, and processing efficiency</strong>  </>,
+      <>Managed high-volume caseloads under pressure, maintaining <strong>accuracy, confidentiality, and processing efficiency</strong></>,
       <>Coordinated with senior officials to monitor workflows and improve <strong>case processing and reporting systems</strong></>,
       <>Resolved complex client inquiries via phone and email, delivering <strong>accurate guidance in time-sensitive situations</strong></>,
     ],
@@ -58,7 +58,7 @@ const experiences = [
     roleDetail: '',
     org: 'Bangladesh Institute of Social Research (BISR) Trust',
     location: 'Dhaka, Bangladesh',
-    period: 'Nov 2021 - Feb 2022',
+    period: 'Nov 2021 – Feb 2022',
     accent: '#9D9BAD',
     accentLight: '#ECEAF5',
     accentMid: '#D8D6E8',
@@ -69,7 +69,7 @@ const experiences = [
       </svg>
     ),
     bullets: [
-      <>Conducted data validation, coding, and statistical analysis using <strong>SPSS</strong>, supporting research projects  </>,
+      <>Conducted data validation, coding, and statistical analysis using <strong>SPSS</strong>, supporting research projects</>,
       <>Designed data collection tools and conducted fieldwork under <strong>academic and ethical standards</strong></>,
       <>Organised datasets and documentation, improving <strong>accuracy and usability of research outputs</strong></>,
     ],
@@ -94,7 +94,6 @@ export default function ExperienceTimeline() {
           <ExperienceCard
             key={i}
             exp={exp}
-            index={i}
             isActive={active === i}
             onClick={() => setActive(i)}
           />
@@ -110,7 +109,7 @@ export default function ExperienceTimeline() {
           top: '50%', transform: 'translateY(-50%)',
           height: 3,
           borderRadius: 4,
-          background: 'linear-gradient(to right, #C1A577, #BAA7AA, #C5C3D0)',
+          background: 'linear-gradient(to right, #9A7A45, #BAA7AA, #C5C3D0)',
         }} />
 
         {/* Dots + labels row */}
@@ -118,7 +117,7 @@ export default function ExperienceTimeline() {
           display: 'grid',
           gridTemplateColumns: `repeat(${experiences.length}, 1fr)`,
           position: 'relative',
-          padding: '18px 0',
+          padding: '28px 0',
         }}>
           {experiences.map((exp, i) => (
             <button
@@ -128,7 +127,7 @@ export default function ExperienceTimeline() {
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'center',
-                gap: 8,
+                gap: 12,
                 background: 'none',
                 border: 'none',
                 cursor: 'pointer',
@@ -152,9 +151,9 @@ export default function ExperienceTimeline() {
 
               {/* Period label */}
               <div style={{
-                fontSize: '0.68rem',
+                fontSize: '0.75rem',
                 color: active === i ? exp.accent : '#BAA7AA',
-                fontWeight: active === i ? 600 : 400,
+                fontWeight: active === i ? 800 : 400,
                 letterSpacing: '0.04em',
                 whiteSpace: 'nowrap',
                 transition: 'color 0.2s',
@@ -174,20 +173,23 @@ export default function ExperienceTimeline() {
   )
 }
 
+// ── EXPERIENCE CARD ───────────────────────────────────────────────────────────
+
 function ExperienceCard({ exp, isActive, onClick }) {
   return (
     <div
       onClick={onClick}
       style={{
-        background: isActive ? exp.accentLight : '#FAF7F2',
-        border: `1.5px solid ${isActive ? exp.accentMid : '#EDE8E2'}`,
+        background: isActive ? exp.accentLight : '#FFFFFF',
+        border: `1.5px solid ${isActive ? exp.accentMid : '#F0EBE4'}`,
         borderRadius: 16,
         padding: '1.4rem 1.3rem 1.6rem',
         cursor: 'pointer',
         transition: 'all 0.25s ease',
         transform: isActive ? 'translateY(-3px)' : 'translateY(0)',
-        boxShadow: isActive ? `0 8px 24px rgba(0,0,0,0.07)` : '0 1px 4px rgba(0,0,0,0.04)',
-        // Pentagon arrow pointing down to timeline
+        boxShadow: isActive
+          ? `0 8px 24px rgba(0,0,0,0.07)`
+          : '0 1px 6px rgba(0,0,0,0.05)',
         position: 'relative',
         display: 'flex',
         flexDirection: 'column',
@@ -212,33 +214,35 @@ function ExperienceCard({ exp, isActive, onClick }) {
         {exp.icon(isActive ? exp.accent : '#BAA7AA')}
       </div>
 
-      {/* Role */}
-      <div>
+      {/* Role detail label */}
+      {exp.roleDetail ? (
         <div style={{
-          fontSize: '0.65rem',
+          fontSize: '0.72rem',
           letterSpacing: '0.1em',
           textTransform: 'uppercase',
           color: isActive ? exp.accent : '#BAA7AA',
           fontWeight: 600,
-          marginBottom: '0.2rem',
+          marginBottom: '0.1rem',
           transition: 'color 0.2s',
         }}>
-          {exp.roleDetail || ''}
+          {exp.roleDetail}
         </div>
-        <div style={{
-          fontFamily: '"Cormorant Garamond", serif',
-          fontSize: '1.05rem',
-          fontWeight: 600,
-          color: '#3A3530',
-          lineHeight: 1.25,
-        }}>
-          {exp.role}
-        </div>
+      ) : null}
+
+      {/* Role title */}
+      <div style={{
+        fontFamily: '"Cormorant Garamond", serif',
+        fontSize: '1.2rem',
+        fontWeight: 700,
+        color: '#2B1F1A',
+        lineHeight: 1.2,
+      }}>
+        {exp.role}
       </div>
 
       {/* Org */}
       <div style={{
-        fontSize: '0.75rem',
+        fontSize: '0.88rem',
         color: '#7A6E68',
         lineHeight: 1.5,
       }}>
@@ -247,20 +251,26 @@ function ExperienceCard({ exp, isActive, onClick }) {
 
       {/* Location pill */}
       <div style={{
-        fontSize: '0.65rem',
+        fontSize: '0.72rem',
         color: isActive ? exp.accent : '#9D9BAD',
-        background: isActive ? `rgba(0,0,0,0.05)` : 'rgba(0,0,0,0.03)',
+        background: isActive ? exp.accentLight : 'rgba(0,0,0,0.03)',
+        border: `1px solid ${isActive ? exp.accentMid : '#EDE8E2'}`,
         borderRadius: 20,
-        padding: '2px 9px',
-        letterSpacing: '0.04em',
+        padding: '3px 10px',
+        letterSpacing: '0.03em',
         display: 'flex',
         alignItems: 'center',
         gap: 4,
+        marginTop: '0.1rem',
       }}>
-        <span>📍</span> {exp.location}
+        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+          <circle cx="12" cy="10" r="3"/>
+        </svg>
+        {exp.location}
       </div>
 
-      {/* Arrow pointer down */}
+      {/* Arrow pointer down when active */}
       {isActive && (
         <div style={{
           position: 'absolute',
@@ -278,14 +288,17 @@ function ExperienceCard({ exp, isActive, onClick }) {
   )
 }
 
+// ── DETAIL PANEL ──────────────────────────────────────────────────────────────
+
 function DetailPanel({ exp }) {
   return (
     <div style={{
-      background: '#F2EDE4',
+      background: '#FEFCFA',
       border: `1px solid ${exp.accentMid}`,
       borderRadius: 14,
-      padding: '1.6rem 2rem',
+      padding: '1.8rem 2.2rem',
       marginTop: '1rem',
+      boxShadow: '0 2px 16px rgba(0,0,0,0.05)',
       transition: 'border-color 0.3s',
     }}>
       {/* Panel header */}
@@ -293,32 +306,39 @@ function DetailPanel({ exp }) {
         display: 'flex',
         alignItems: 'flex-start',
         justifyContent: 'space-between',
-        marginBottom: '1.2rem',
+        marginBottom: '1.4rem',
         flexWrap: 'wrap',
         gap: '0.5rem',
       }}>
         <div>
           <div style={{
             fontFamily: '"Cormorant Garamond", serif',
-            fontSize: '1.2rem',
-            fontWeight: 600,
-            color: '#3A3530',
-            marginBottom: '0.15rem',
+            fontSize: '1.45rem',
+            fontWeight: 700,
+            color: '#2B1F1A',
+            marginBottom: '0.25rem',
+            lineHeight: 1.2,
           }}>
             {exp.role}{exp.roleDetail ? ` — ${exp.roleDetail}` : ''}
           </div>
-          <div style={{ fontSize: '0.8rem', color: '#7A6E68' }}>
+          <div style={{
+            fontSize: '0.9rem',
+            color: '#9A7A45',
+            fontWeight: 700,
+          }}>
             {exp.org} · {exp.location}
           </div>
         </div>
+
+        {/* Period badge */}
         <span style={{
-          fontSize: '0.72rem',
-          color: exp.accent,
+          fontSize: '0.75rem',
+          color: '#9A7A45',
           background: exp.accentLight,
           border: `1px solid ${exp.accentMid}`,
-          padding: '0.28rem 0.85rem',
+          padding: '0.3rem 0.95rem',
           borderRadius: 20,
-          fontWeight: 500,
+          fontWeight: 700,
           whiteSpace: 'nowrap',
         }}>
           {exp.period}
@@ -326,26 +346,42 @@ function DetailPanel({ exp }) {
       </div>
 
       {/* Bullets */}
-      <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.6rem' }}>
+      <ul style={{
+        listStyle: 'none',
+        padding: 0,
+        margin: 0,
+        display: 'flex',
+        flexDirection: 'column',
+        gap: '0.7rem',
+      }}>
         {exp.bullets.map((b, i) => (
           <li key={i} style={{
             display: 'flex',
-            gap: '0.75rem',
+            gap: '0.85rem',
             alignItems: 'flex-start',
           }}>
+            {/* Checkmark circle */}
             <span style={{
-              marginTop: '0.3rem',
+              marginTop: '0.15rem',
               flexShrink: 0,
-              width: 6, height: 6,
+              width: 20,
+              height: 20,
               borderRadius: '50%',
-              background: exp.accentMid,
-              border: `1.5px solid ${exp.accent}`,
-              display: 'inline-block',
-            }} />
+              background: exp.accentLight,
+              border: `1.5px solid ${exp.accentMid}`,
+              display: 'inline-flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+            }}>
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+                <path d="M2 5l2.5 2.5L8 3" stroke={exp.accent} strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </span>
+
             <span style={{
-              fontSize: '0.86rem',
+              fontSize: '0.95rem',
               color: '#5A504A',
-              lineHeight: 1.8,
+              lineHeight: 1.9,
             }}>
               {b}
             </span>

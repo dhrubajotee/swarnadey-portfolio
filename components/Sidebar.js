@@ -54,7 +54,7 @@ export default function Sidebar() {
       }}
     >
       {/* Profile top */}
-      <div style={{ padding: '2rem 1.6rem 1.6rem', borderBottom: '1px solid #E0D6CB' }}>
+      {/* <div style={{ padding: '2rem 1.6rem 1.6rem', borderBottom: '1px solid #E0D6CB' }}>
         <div
           style={{
             width: 72,
@@ -91,13 +91,65 @@ export default function Sidebar() {
         >
           {profile.name}
         </div>
-        {/* <div style={{ fontSize: '0.72rem', color: '#C1A577', letterSpacing: '0.07em', textTransform: 'uppercase', lineHeight: 1.6 }}>
-          {profile.title}
-        </div> */}
         <div style={{ fontSize: '0.72rem', color: '#9D9BAD', marginTop: '0.2rem', lineHeight: 1.6 }}>
           {profile.subtitle}
         </div>
+      </div> */}
+
+      <div style={{ padding: '2.2rem 1.6rem 1.8rem', borderBottom: '1px solid #E0D6CB', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
+  
+  {/* Photo with ring */}
+      <div style={{
+  width: 88,
+  height: 88,
+  borderRadius: '50%',
+  padding: 3,
+  background: 'linear-gradient(135deg, #C1A577, #BAA7AA)',
+  marginBottom: '1.1rem',
+  flexShrink: 0,
+}}>
+  <div style={{
+    width: '100%',
+    height: '100%',
+    borderRadius: '50%',
+    overflow: 'hidden',
+    position: 'relative',
+  }}>
+    <Image
+      src="/images/SD.jpg"
+      alt="SD"
+      fill
+      style={{ objectFit: 'cover' }}
+    />
+  </div>
+</div>
+
+      {/* Name */}
+      <div style={{
+        fontFamily: '"Cormorant Garamond", serif',
+        fontSize: '1.95rem',
+        fontWeight: 900,
+        color: '#2B1F1A',
+        marginBottom: '0.4rem',
+        lineHeight: 1.2,
+      }}>
+        {profile.name}
       </div>
+
+      {/* Subtitle */}
+      <div style={{
+        fontSize: '0.78rem',
+        color: '#9A7A45',
+        letterSpacing: '0.12em',
+        textTransform: 'uppercase',
+        lineHeight: 1.7,
+        fontWeight: 750,
+        maxWidth: '140px',
+      }}>
+        {profile.subtitle}
+      </div>
+
+    </div>
 
       {/* Nav */}
       <nav style={{ padding: '1.2rem 0', flex: 1 }}>
